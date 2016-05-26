@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виталий Арцыбашев](https://up.htmlacademy.ru/adaptive/7/user/78617).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Сёмушкин](https://htmlacademy.ru/profile/id48647).
 
 ---
 
