@@ -7,82 +7,84 @@
 	<body>
 
 	<!--   	header-->
-    <header class="page-header">
-    	<div class="page-header__wrap">
-    		<nav class="main-nav">
-    			<ul class="main-nav__list">
-    				<li class="main-nav__item"><a href="#">Главная</a></li>
-    				<li class="main-nav__item"><a href="#">Фото и видео</a></li>
-    				<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-    				<li class="main-nav__item"><a href="#">Html academy</a></li>
-    			</ul>
-    		</nav>
-    		<div class="top-menu__logo">
-    			<a href="#">
-    				<img src="http://placehold.it/102x83" alt="sedona-label">
-    			</a>
-    		</div>
-    		<button class="top-menu__toggle" type="button">Открыть меню</button>
-    	</div>
-    </header>
-    
+		<header class="page-header">
+			<div class="page-header__wrap">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фото и видео</a></li>
+						<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+						<li class="main-nav__item"><a href="#">Html academy</a></li>
+					</ul>
+					<button class="top-menu__toggle" type="button">Открыть меню</button>
+				</nav>
+				<div class="top-menu__logo">
+					<a href="#">
+						<img src="http://placehold.it/102x83" width="102" height="83" alt="sedona-label">
+					</a>
+				</div>
+			</div>
+		</header>
+
 <!--    main-->
-    <main class="main-content">
-    	<div class="main-content__wrap">
-    		<div class="sedona-wallpaper"></div>
-    		<div class="gallery">
-    			<div class="photo-gallery">
-    				<div class="photo-gallery__promo">
-    					<h3>Фото и видео</h3>
-    					<p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике.</p>
-    				</div>
-    				<div class="photo-gallery__item  frame">
-    					<img src="http://placehold.it/280x280" alt="" class="frame__image">
-    					<h3 class="frame__title">Неродные просторы</h3>
-    					<p class="frame__author">Автор фото: Борис</p>
-    					<p class="frame__numerator">1350</p>
-    				</div>
-    				<div class="photo-gallery__item  frame">
-    					<img src="http://placehold.it/280x280" alt="" class="frame__image">
-    					<h3 class="frame__title">Местная растительность</h3>
-    					<p class="frame__author">Автор фото: Сергей</p>
-    					<p class="frame__numerator">143</p>
-    				</div>
-    				<div class="photo-gallery__item  frame">
-    					<img src="http://placehold.it/280x280" alt="" class="frame__image">
-    					<h3 class="frame__title">Дорога на Север</h3>
-    					<p class="frame__author">Автор фото: Петр</p>
-    					<p class="frame__numerator">96</p>
-    				</div>
-    				<div class="photo-gallery__item  frame">
-    					<img src="http://placehold.it/280x280" alt="" class="frame__image">
-    					<h3 class="frame__title">Мост дьявола</h3>
-    					<p class="frame__author">Автор фото: Антон</p>
-    					<p class="frame__numerator">254</p>
-    				</div>
-    			</div>
-    			<div class="video-gallery">
-    				<h3 class="video-gallery__title">Все еще сомневаетесь</h3>
-    				<p class="video-gallery__promo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    				<video src="http://placehold.it/320x200"></video>
-    			</div>
-    		</div>
-    	</div>
-    </main>
-    
-    <!--    footer-->
-    <footer class="page-footer">
-    	<div class="page-footer__wrap">
-    		<h3 class="page-footer__hashtag"></h3>
-    		<div class="social-block">
-    			<ul>
-    				<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
-    				<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
-    				<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
-    			</ul>
-    		</div>
-    		<div class="page-footer__copyright">Разработано</div>
-    	</div>
-    </footer>
+		<main class="main-content">
+			<div class="main-content__wrap">
+				<div class="wallpaper"></div>
+				<div class="promo">
+					<h1 class="promo__title">Фото и видео</h1>
+					<p class="promo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике.</p>
+				</div>
+				<div class="photo-gallery">
+					<div class="photo-gallery__item">
+						<img src="http://placehold.it/280x280" width="280" height="280" alt="" class="photo-gallery__image">
+						<h3 class="photo-gallery__title">Неродные просторы</h3>
+						<p class="photo-gallery__author">Автор фото: Борис</p>
+						<div class="photo-gallery__numerator"><span class="photo-like"></span><span class="like-count"></span></div>
+					</div>
+					<div class="photo-gallery__item">
+						<img src="http://placehold.it/280x280" width="280" height="280" alt="" class="photo-gallery__image">
+						<h3 class="photo-gallery__title">Местная растительность</h3>
+						<p class="photo-gallery__author">Автор фото: Сергей</p>
+						<div class="photo-gallery__numerator"><span class="photo-like"></span><span class="like-count"></span></div>
+					</div>
+					<div class="photo-gallery__item">
+						<img src="http://placehold.it/280x280" width="280" height="280" alt="" class="photo-gallery__image">
+						<h3 class="photo-gallery__title">Дорога на Север</h3>
+						<p class="photo-gallery__author">Автор фото: Петр</p>
+						<div class="photo-gallery__numerator"><span class="photo-like"></span><span class="like-count"></span></div>
+					</div>
+					<div class="photo-gallery__item">
+						<img src="http://placehold.it/280x280" width="280" height="280" alt="" class="photo-gallery__image">
+						<h3 class="photo-gallery__title">Мост дьявола</h3>
+						<p class="photo-gallery__author">Автор фото: Антон</p>
+						<div class="photo-gallery__numerator"><span class="photo-like"></span><span class="like-count"></span></div>
+					</div>
+				</div>
+				<div class="video-gallery">
+					<b class="video-gallery__title">Все еще сомневаетесь</b>
+					<p class="video-gallery__promo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+					<video src="http://placehold.it/320x200"></video>
+				</div>
+			</div>
+		</main>
+
+	<!--    footer-->
+		<footer class="page-footer">
+			<div class="page-footer__wrap">
+				<h3 class="page-footer__hashtag"></h3>
+				<div class="social-block">
+					<ul>
+						<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
+						<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
+						<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright">Разработано
+					<a href="https://htmlacademy.ru/">
+						<img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+					</a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

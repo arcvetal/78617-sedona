@@ -1,118 +1,122 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-  
+		<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Седона</title>
+	</head>
+	<body>
+
 <!--   	header-->
-    <header class="page-header">
-    	<div class="page-header__wrap">
-    		<nav class="main-nav">
-    			<ul class="main-nav__list">
-    				<li class="main-nav__item"><a href="#">Главная</a></li>
-    				<li class="main-nav__item"><a href="#">Фото и видео</a></li>
-    				<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-    				<li class="main-nav__item"><a href="#">Html academy</a></li>
-    			</ul>
-    		</nav>
-    		<div class="top-menu__logo">
-    			<a href="#">
-    				<img src="http://placehold.it/102x83" alt="sedona-label">
-    			</a>
-    		</div>
-    		<button class="top-menu__toggle" type="button">Открыть меню</button>
-    	</div>
-    </header>
-    
+		<header class="page-header">
+			<div class="page-header__wrap">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Главная</a></li>
+						<li class="main-nav__item"><a href="#">Фото и видео</a></li>
+						<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+						<li class="main-nav__item"><a href="#">Html academy</a></li>
+					</ul>
+					<button class="top-menu__toggle" type="button">Открыть меню</button>
+				</nav>
+				<div class="logo">
+					<a href="#">
+						<img src="http://placehold.it/102x83" width="102" height="83" alt="sedona-label">
+					</a>
+				</div>
+			</div>
+		</header>
+
 <!--    main-content-->
-    <main class="main-content">
-    	<div class="main-content__wrap">
-    		<section class="intro">
-    			<div class="intro__wallpaper">
-    			</div>
-    			<article class="intro__article">
-    				<h3 class="intro__title"> Седона - небольщой городок в Аризоне, 	заслуживающий большего!</h3>
-    				<p class="intro__text"></p>
-    			</article>
-    		</section>
-    
+		<main class="main-content">
+			<div class="main-content__wrap">
+				<div class="wallpaper wallpaper--full"></div>
+				<div class="promo">
+					<h1 class="promo__title"> Седона - небольщой городок в Аризоне, 	заслуживающий большего!</h1>
+					<p class="promo__text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+				</div>
+
 <!--    content-->
-    		<section class="content">
-    			<div class="info-list">
+				<div class="features">
 <!--    	first-item-->
-    				<div class="info-list__item  info-list__item--first">
-    					<h3>Настоящий городок</h3>
-    					<p>-№1- Седона не атракцион для туристов, там течет своя жизнь</p>
-    					<img src="http://placehold.it/320x260" alt="sedona-town">
-    					<div class="info-list__tags">
-    						<ul>
-    							<li class="info-tag">
-    								<h3 class="info-tag__title"> Жилье</h3>
-    								<p class="info-tag__text">Рекомендуем пожить в настоящем мотеле, 	все как в кино!</p>
-    							</li>
-    							<li class="info-tag">
-    								<h3 class="info-tag__title">Сувениры</h3>
-    								<p class="info-tag__text">Не только китайского, но и местного 	производства!</p>
-    							</li>
-    							<li class="info-tag">
-    								<h3 class="info-tag__title">Еда</h3>
-    								<p class="info-tag__text">Всегда заказывайте фирменный бургер, вы 	не разочаруетесь!</p>
-    							</li>
-    						</ul>
-    					</div>
-    				</div>
+					<div class="features__item  features__item--image">
+						<div class="features__description">
+							<h2 class="features__title">Настоящий городок</h2>
+							<p class="features__text">-№<span class="title-counter"></span>- Седона не атракцион для туристов, там течет своя жизнь</p>
+						</div>
+						<img class="features__image" src="http://placehold.it/320x260" width="320" height="260" alt="sedona-town">
+						<div class="features-tags">
+							<div class="features-tags__item">
+								<h3 class="features-tags__title"> Жилье</h3>
+								<p class="features-tags__text">Рекомендуем пожить в настоящем мотеле, 	все как в кино!</p>
+							</div>
+							<div class="features-tags__item">
+								<h3 class="features-tags__title">Сувениры</h3>
+								<p class="features-tags__text">Не только китайского, но и местного 	производства!</p>
+							</div>
+							<div class="features-tags__item">
+								<h3 class="features-tags__title">Еда</h3>
+								<p class="features-tags__text">Всегда заказывайте фирменный бургер, вы 	не разочаруетесь!</p>
+							</div>
+						</div>
+					</div>
 <!--    		second-item-->
-    				<div class="info-list__item  info-list__item--second">
-    					<h3>Там есть мост дьявола</h3>
-    					<p>-№2- Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
-    					<img src="http://placehold.it/320x260" alt="Каньон">
-    				</div>
+					<div class="features__item  features__item--image">
+						<div class="features__description">
+							<h2 class="features__title">Там есть мост дьявола</h2>
+							<p class="features__text">-№<span class="title-counter"></span>- Да, но по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>
+						<img class="features__image" src="http://placehold.it/320x260" width="320" height="260" alt="Каньон">
+					</div>
 <!--    		third item-->
-    				<div class="info-list__item">
-    					<h3>Небольшая площадь</h3>
-    					<p>-№3- Все достопримечательности находятся очень близко</p>
-    				</div>
+					<div class="features__item">
+						<div class="features__description">
+							<h2 class="features__title">Небольшая площадь</h2>
+							<p class="features__text">-№<span class="title-counter"></span>- Все достопримечательности находятся очень близко</p>
+						</div>
+					</div>
 <!--    		fourth item-->
-    				<div class="info-list__item">
-    					<h3>Красивая дорога</h3>
-    					<p>-№4- Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-    				</div>
+					<div class="features__item">
+						<div class="features__description">
+							<h2 class="features__title">Красивая дорога</h2>
+							<p class="features__text">-№<span class="title-counter"></span>- Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</div>
+					</div>
 <!--    		fifth item-->
-    				<div class="info-list__item">
-    					<h3>Мало туристов</h3>
-    					<p>-№5- Большинство едет в Гранд Каньон и толпиться там</p>
-    				</div>
-    			</div>
-    		</section>
-    
+					<div class="features__item">
+						<div class="features__description">
+							<h2 class="features__title">Мало туристов</h2>
+							<p class="features__text">-№<span class="title-counter"></span>- Большинство едет в Гранд Каньон и толпиться там</p>
+						</div>
+					</div>
+				</div>
+
 <!--    Hotel-->
-    		<section class="hotel">
-    			<h2>Заинтересовались?</h2>
-    			<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения 	гостиниц в Седоне</p>
-    			<button type="button">Найти гостиницу</button>
-    		</section>
-    
+				<div class="search-hotel">
+					<b class="search-hotel__title">Заинтересовались?</b>
+					<p class="search-hotel__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения 	гостиниц в Седоне</p>
+					<a href="#" class="search-hotel__btn">Найти гостиницу</a>
+				</div>
+			</div>
 <!--    map-->
-    		<div class="map">
-    			<img src="http://placehold.it/320x350" alt="map">
-    		</div>
-    	</div>
-    </main>
+				<div class="map"></div>
+		</main>
 <!--    footer-->
-    <footer class="page-footer">
-    	<div class="page-footer__wrap">
-    		<h3 class="page-footer__hashtag"></h3>
-    		<div class="social-block">
-    			<ul>
-    				<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
-    				<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
-    				<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
-    			</ul>
-    		</div>
-    		<div class="page-footer__copyright">Разработано</div>
-    	</div>
-    </footer>
-  </body>
+		<footer class="page-footer">
+			<div class="page-footer__wrap">
+				<div class="page-footer__hashtag"></div>
+				<div class="social-block">
+					<ul>
+						<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
+						<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
+						<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright">Разработано
+					<a href="https://htmlacademy.ru/">
+						<img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
