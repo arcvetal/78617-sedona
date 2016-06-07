@@ -1,0 +1,146 @@
+.features{
+  position: relative;
+
+    &::before{
+  content: "";
+  background: url(../../img/promo-klin.png);
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  z-index: 10;
+  }
+}
+.features__item{
+  background-color: $feat-item-logo;
+
+    &--city,
+    &--bridge{
+  background-color: $label-color;
+  }
+}
+
+.features__description {
+  box-sizing: border-box;
+  width: 280px;
+  height: 167px;
+  border-bottom: 1px solid;
+  border-bottom-color: $featurea-border-bot;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 28px;
+
+    &--city{
+  height: 211px;
+  padding-top: 60px;
+  }
+
+    &--bridge{
+  height: 190px;
+  padding-top: 40px;
+  }
+
+    &--tourist{
+  border-bottom: 1px solid;
+  border-bottom-color: transparent;
+  }
+}
+
+.features__title{
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: -14px;
+  margin-top: 0px;
+
+    &--city,
+    &--bridge{
+  color: #ffffff;
+  }
+}
+
+.features__text{
+  display: block;
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+    &--city,
+    &--bridge{
+  color: #ffffff;
+  }
+}
+
+.title-counter{
+
+}
+
+.features__item-number{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+.features__item--open{
+  background-color: $label-color;
+}
+
+.features__image{
+  height: 260px;
+  display: block;
+}
+
+.features-tags{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 70px;
+  padding-right: 40px;
+}
+
+.features-tags__item{
+  margin-bottom: 25px;
+}
+
+.features-tags__title{
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+
+    &::before{
+  content: "";
+  position: absolute;
+  left: -52px;
+  top: -5px;
+  background-image: url(../../img/sprite-tags.png);
+  background-repeat: no-repeat;
+  }
+
+    &--home::before{
+  content: "";
+  width: 40px;
+  height: 37px;
+  background-position: -3px 0;
+  }
+
+    &--gift::before{
+  content: "";
+  width: 35px;
+  height: 40px;
+  background-position: -5px -128px;
+  }
+
+    &--food::before{
+  content: "";
+  width: 40px;
+  height: 35px;
+  background-position: 0px -245px;
+  }
+}
+
+.features-tags__text{
+  color: #333333;
+  font-size: 14px;
+  line-height: 21px;
+}

@@ -1,1 +1,32 @@
-body { background:red; }
+@import "variables.scss";
+
+@import "blocks/body.scss";
+
+@import "blocks/wrap.scss";
+
+@import "blocks/main-nav.scss";
+
+@import "blocks/logo-link.scss";
+
+@import "blocks/wallpaper.scss";
+
+@import "blocks/promo.scss";
+
+@import "blocks/features.scss";
+
+@import "blocks/page-footer.scss";
+
+@import "blocks/social-block.scss";
+
+@import "blocks/map.scss";
+
+@import "blocks/search-hotel.scss";
+
+@import "blocks/photo-gallery.scss";
+
+@import "blocks/video-gallery.scss";
+
+@import "blocks/form.scss";
+
+@import "fonts.scss";
+

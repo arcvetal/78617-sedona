@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	  <link rel="stylesheet" href="css/style.css">
 		<meta charset="UTF-8">
 		<title>Седона: Форма</title>
 	</head>
-	<body>
-
+	<body class="body">
   <!--   	header-->
 		<header class="page-header">
 			<div class="wrap">
@@ -20,12 +20,11 @@
 				</nav>
 				<div class="logo-link">
 					<a href="#">
-						<img src="http://placehold.it/102x83" width="102" height="83" alt="sedona-label">
+						<img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="sedona-label">
 					</a>
 				</div>
 			</div>
 		</header>
-
 	<!--    main-->
 		<main class="main-content">
 			<div class="wrap">
@@ -38,55 +37,79 @@
 				<form class="form" action="#" method="post">
 					<div class="form__fieldset">
 						<h3 class="form__title">Представьтесь, пожалуйста:</h3>
-<!--  name-->
-						<label class="form__label" for="name">ИМЯ:</label>
-						<input class="form__item  form__item--text" type="text" name="name" id="name" placeholder="Петр">
+<!-- name-->
+            <div class="form__field">
+						  <label class="form__label" for="name">ИМЯ:</label>
+						  <input class="form__item  form__item--name" type="text" name="name" id="name" value="Петр">
+						</div>
 <!--  second-name-->
-						<label class="form__label" for="second-name">ФАМИЛИЯ:</label>
-						<input class="form__item  form__item--text" type="text" name="second-name" id="second-name" placeholder="Иванов">
+            <div class="form__field">
+						  <label class="form__label" for="second-name">ФАМИЛИЯ:</label>
+						  <input class="form__item  form__item--second-name" type="text" name="second-name" id="second-name" value="Иванов">
+						</div>
 <!--  father-name-->
-						<label class="form__label" for="father-name">ОТЧЕСТВО:</label>
-						<input class="form__item  form__item--text" type="text" name="father-name" id="father-name" placeholder="Александрович">
+            <div class="form__field">
+						  <label class="form__label" for="father-name">ОТЧЕСТВО:</label>
+						  <input class="form__item  form__item--father-name" type="text" name="father-name" id="father-name" value="Александрович">
+						</div>
 					</div>
 <!--contacts-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Контактная информация</h3>
 <!--  Phone-->
-						<label class="form__label" for="cont-phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
-						<input class="form__item  form__item--text" type="tel" name="cont-phone" id="cont-phone" placeholder="Введите телефон">
-						<p class="form__warning">Ошибка, перепроверьте номер</p>
+            <div class="form__field">
+						  <label class="form__label  form__label--contact" for="cont-phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
+						  <input class="form__item  form__item--phone" type="tel" name="cont-phone" id="cont-phone" value="Введите телефон">
+						  <p class="form__warning">Ошибка, перепроверьте номер</p>
+						</div>
 <!--  E-mail-->
-						<label class="form__label" for="cont-email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-						<input class="form__item  form__item--text" type="email" name="cont-email" id="cont-email" placeholder="Введите e-mail">
+            <div class="form__field">
+						  <label class="form__label  form__label--contact" for="cont-email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+						  <input class="form__item  form__item--email" type="email" name="cont-email" id="cont-email" value="Введите e-mail">
+						</div>
 					</div>
 <!--impression-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Ваше общее впечатление</h3>
 <!--  radio-good-->
-						<input class="form__item  form__item--radio" type="radio" id="radio1" name="impres" value="good" checked>
-						<label class="form__label  form__label--bold" for="radio1">Скорее положительное</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--radio" type="radio" id="radio1" name="impres" value="good" checked>
+						  <label class="form__label  form__label--bold" for="radio1">Скорее положительное</label>
+						</div>
 <!--  radio-bad-->
-						<input class="form__item  form__item--radio" type="radio" id="radio2" name="impres" value="bad">
-						<label class="form__label  form__label--bold" for="radio2">Скорее отрицаельное</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--radio" type="radio" id="radio2" name="impres" value="bad">
+						  <label class="form__label  form__label--bold" for="radio2">Скорее отрицаельное</label>
+						</div>
 <!--  radio-dontknow-->
-						<input class="form__item  form__item--radio" type="radio" id="radio3"  name="impres" value="dontknow">
-						<label class="form__label  form__label--bold" for="radio3">Затрудняюсь ответить</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--radio" type="radio" id="radio3"  name="impres" value="dontknow">
+						  <label class="form__label  form__label--bold" for="radio3">Затрудняюсь ответить</label>
+						</div>
 					</div>
 <!--places-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Посещенный достопримечательности:</h3>
 <!--  checkbox 1-->
-						<input class="form__item  form__item--check" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-						<label class="form__label  form__label--bold" for="devil-bridge">Мост Дьявола</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+						  <label class="form__label  form__label--bold  form__label--check" for="devil-bridge">Мост Дьявола</label>
+						</div>
 <!--  checkbox 2-->
-						<input class="form__item  form__item--check" type="checkbox" name="slide-park" id="slide-park" checked>
-						<label class="form__label  form__label--bold" for="slide-park">Слайд-парк</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="slide-park" id="slide-park" checked>
+						  <label class="form__label  form__label--bold  form__label--check" for="slide-park">Слайд-парк</label>
+						</div>
 <!--  checkbox 3-->
-						<input class="form__item  form__item--check" type="checkbox" name="rock-bell" id="rock-bell">
-						<label class="form__label  form__label--bold" for="rock-bell">Гора-Колокол</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="rock-bell" id="rock-bell">
+						  <label class="form__label  form__label--bold  form__label--check" for="rock-bell">Гора-Колокол</label>
+						</div>
 <!--  checkbox 4-->
-						<input class="form__item  form__item--check" type="checkbox" name="red-rocks" id="red-rocks" checked>
-						<label class="form__label  form__label--bold" for="red-rocks">Красные скалы</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="red-rocks" id="red-rocks" checked>
+						  <label class="form__label  form__label--bold  form__label--check" for="red-rocks">Красные скалы</label>
+						</div>
 					</div>
 <!--comment-block-->
 					<div class="form__fieldset">
@@ -103,7 +126,7 @@
 	<!--    footer-->
 		<footer class="page-footer">
 			<div class="wrap">
-				<h3 class="page-footer__hashtag"></h3>
+				<h3 class="page-footer__hashtag">#visitSedona</h3>
 				<div class="social-block">
 					<ul>
 						<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
@@ -113,7 +136,7 @@
 				</div>
 				<div class="page-footer__copyright">Разработано
 					<a href="https://htmlacademy.ru/">
-						<img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+						<img src="../../img/HTML-logo.png" width="27" height="34" alt="HTML Academy">
 					</a>
 				</div>
 			</div>
