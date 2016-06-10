@@ -1,4 +1,4 @@
-.features{
+.features {
   position: relative;
 
     &::before{
@@ -12,11 +12,11 @@
   z-index: 10;
   }
 }
-.features__item{
+.features__item {
   background-color: $feat-item-logo;
 
     &--city,
-    &--bridge{
+    &--bridge {
   background-color: $label-color;
   }
 }
@@ -31,35 +31,35 @@
   margin: 0 auto;
   padding-top: 28px;
 
-    &--city{
+    &--city {
   height: 211px;
   padding-top: 60px;
   }
 
-    &--bridge{
+    &--bridge {
   height: 190px;
   padding-top: 40px;
   }
 
-    &--tourist{
+    &--tourist {
   border-bottom: 1px solid;
   border-bottom-color: transparent;
   }
 }
 
-.features__title{
+.features__title {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: -14px;
   margin-top: 0px;
 
     &--city,
-    &--bridge{
+    &--bridge {
   color: #ffffff;
   }
 }
 
-.features__text{
+.features__text {
   display: block;
   color: #333333;
   font-size: 14px;
@@ -72,11 +72,11 @@
   }
 }
 
-.title-counter{
+.title-counter {
 
 }
 
-.features__item-number{
+.features__item-number {
   display: block;
   padding-top: 10px;
   padding-bottom: 16px;
@@ -91,7 +91,7 @@
   display: block;
 }
 
-.features-tags{
+.features-tags {
   background-color: white;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -99,11 +99,11 @@
   padding-right: 40px;
 }
 
-.features-tags__item{
+.features-tags__item {
   margin-bottom: 25px;
 }
 
-.features-tags__title{
+.features-tags__title {
   font-size: 18px;
   line-height: 26px;
   position: relative;
@@ -117,21 +117,21 @@
   background-repeat: no-repeat;
   }
 
-    &--home::before{
+    &--home::before {
   content: "";
   width: 40px;
   height: 37px;
   background-position: -3px 0;
   }
 
-    &--gift::before{
+    &--gift::before {
   content: "";
   width: 35px;
   height: 40px;
   background-position: -5px -128px;
   }
 
-    &--food::before{
+    &--food::before {
   content: "";
   width: 40px;
   height: 35px;
@@ -139,7 +139,7 @@
   }
 }
 
-.features-tags__text{
+.features-tags__text {
   color: #333333;
   font-size: 14px;
   line-height: 21px;

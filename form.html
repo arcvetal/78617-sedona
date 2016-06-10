@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 	  <link rel="stylesheet" href="css/style.css">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Седона: Форма</title>
 	</head>
 	<body class="body">
-  <!--   	header-->
-		<header class="page-header">
-			<div class="wrap">
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#">Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фото и видео</a></li>
-						<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-						<li class="main-nav__item"><a href="#">Html academy</a></li>
-					</ul>
-					<button class="main-nav__toggle" type="button">Открыть меню</button>
-				</nav>
-				<div class="logo-link">
-					<a href="#">
-						<img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="sedona-label">
-					</a>
-				</div>
-			</div>
-		</header>
-	<!--    main-->
-		<main class="main-content">
-			<div class="wrap">
+    <div class="wrapper">
+<!--   	header-->
+		  <header class="page-header">
+			  <nav class="main-nav">
+				  <ul class="main-nav__list">
+					  <li class="main-nav__item"><a href="index.html">Главная</a></li>
+					  <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+					  <li class="main-nav__item"><a>Форма отзыва</a></li>
+					  <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+				  </ul>
+				  <button class="main-nav__toggle" type="button">Открыть меню</button>
+			  </nav>
+			  <div class="logo-link">
+				  <a href="index.html">
+					  <img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+				  </a>
+			  </div>
+		  </header>
+<!--    main-->
+		  <main class="page-content">
 				<div class="wallpaper"></div>
 				<div class="promo">
 					<h1 class="promo__title">Оставьте свой отзыв</h1>
@@ -58,14 +57,14 @@
 						<h3 class="form__title">Контактная информация</h3>
 <!--  Phone-->
             <div class="form__field">
-						  <label class="form__label  form__label--contact" for="cont-phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
-						  <input class="form__item  form__item--phone" type="tel" name="cont-phone" id="cont-phone" value="Введите телефон">
+						  <label class="form__label  form__label--contact" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
+						  <input class="form__item  form__item--phone" type="tel" name="phone" id="phone" value="Введите телефон">
 						  <p class="form__warning">Ошибка, перепроверьте номер</p>
 						</div>
 <!--  E-mail-->
             <div class="form__field">
-						  <label class="form__label  form__label--contact" for="cont-email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-						  <input class="form__item  form__item--email" type="email" name="cont-email" id="cont-email" value="Введите e-mail">
+						  <label class="form__label  form__label--contact" for="email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+						  <input class="form__item  form__item--email" type="email" name="email" id="email" value="Введите e-mail">
 						</div>
 					</div>
 <!--impression-block-->
@@ -73,18 +72,18 @@
 						<h3 class="form__title">Ваше общее впечатление</h3>
 <!--  radio-good-->
             <div class="form__field">
-						  <input class="form__item  form__item--radio" type="radio" id="radio1" name="impres" value="good" checked>
-						  <label class="form__label  form__label--bold" for="radio1">Скорее положительное</label>
+						  <input class="form__item  form__item--radio" type="radio" id="impression-good" name="impression" value="good" checked>
+						  <label class="form__label  form__label--bold" for="impression-good">Скорее положительное</label>
 						</div>
 <!--  radio-bad-->
             <div class="form__field">
-						  <input class="form__item  form__item--radio" type="radio" id="radio2" name="impres" value="bad">
-						  <label class="form__label  form__label--bold" for="radio2">Скорее отрицаельное</label>
+						  <input class="form__item  form__item--radio" type="radio" id="impression-bad" name="impression" value="bad">
+						  <label class="form__label  form__label--bold" for="impression-bad">Скорее отрицаельное</label>
 						</div>
 <!--  radio-dontknow-->
             <div class="form__field">
-						  <input class="form__item  form__item--radio" type="radio" id="radio3"  name="impres" value="dontknow">
-						  <label class="form__label  form__label--bold" for="radio3">Затрудняюсь ответить</label>
+						  <input class="form__item  form__item--radio" type="radio" id="impression-dontknow" name="impression" value="dontknow">
+						  <label class="form__label  form__label--bold" for="impression-dontknow">Затрудняюсь ответить</label>
 						</div>
 					</div>
 <!--places-block-->
@@ -114,21 +113,18 @@
 <!--comment-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Опишите свои эмоции:</h3>
-						<textarea class="form__textarea" name="subscribe" id="subscribe" cols="30" rows="10">
+						<textarea class="form__textarea" name="text-description" id="text-description" cols="30" rows="10">
 							Опишите подробно все свои восторги
 						</textarea>
-						<button class="form__btn btn" type="submit">Отправить отзыв</button>
 					</div>
+					<button class="form--btn" type="submit">Отправить отзыв</button>
 				</form>
-			</div>
-		</main>
-
-	<!--    footer-->
-		<footer class="page-footer">
-			<div class="wrap">
-				<h3 class="page-footer__hashtag">#visitSedona</h3>
+		  </main>
+<!--    footer-->
+		  <footer class="page-footer">
+				<div class="page-footer__hashtag">#visitSedona</div>
 				<div class="social-block">
-					<ul>
+					<ul class="social-block__list">
 						<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
 						<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
 						<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
@@ -136,10 +132,10 @@
 				</div>
 				<div class="page-footer__copyright">Разработано
 					<a href="https://htmlacademy.ru/">
-						<img src="../../img/HTML-logo.png" width="27" height="34" alt="HTML Academy">
+						<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
 					</a>
 				</div>
-			</div>
-		</footer>
+		  </footer>
+		</div>
 	</body>
 </html>

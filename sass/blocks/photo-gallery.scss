@@ -1,4 +1,4 @@
-.photo-gallery__item{
+.photo-gallery__item {
   box-sizing: border-box;
   height: 415px;
   padding-left: 20px;
@@ -7,25 +7,25 @@
   border-top: 1px solid $photo-gal-border;
   margin-top: 0px;
 }
-.photo-gallery__image{
+.photo-gallery__image {
   margin-bottom: 10px;
   padding: 0;
 }
 
-.photo-gallery__title{
+.photo-gallery__title {
   margin-top: 0;
   margin-bottom: 0;
  font-size: 14px;
   line-height: 24px;
 }
-.photo-gallery__author{
+.photo-gallery__author {
   margin-top: 0;
   margin-bottom: 0;
   color: #333333;
   text-transform: none;
   margin-bottom: 5px;
 }
-.photo-like{
+.like-counter__hand {
   display: block;
   width: 23px;
   height: 21px;

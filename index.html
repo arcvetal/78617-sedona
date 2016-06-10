@@ -3,31 +3,30 @@
   <head>
     <link rel="stylesheet" href="css/style.css">
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body class="body">
+	  <div class="wrapper">
 <!--   	header-->
-		<header class="page-header">
-			<div class="wrap">
+		  <header class="page-header">
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#">Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фото и видео</a></li>
-						<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-						<li class="main-nav__item"><a href="#">Html academy</a></li>
+						<li class="main-nav__item"><a>Главная</a></li>
+						<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+						<li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+						<li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
 					</ul>
 					<button class="main-nav__toggle" type="button">Открыть меню</button>
 				</nav>
 				<div class="logo-link">
-					<a href="#">
-						<img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="sedona-label">
+					<a href="index.html">
+						<img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
 					</a>
 				</div>
-			</div>
-		</header>
+		  </header>
 <!--    main-content-->
-		<main class="main-content">
-			<div class="wrap">
+		  <main class="page-content">
 				<div class="wallpaper wallpaper--full"></div>
 				<div class="promo">
 					<h1 class="promo__title"> Седона - небольщой городок в Аризоне, заслуживающий большего!</h1>
@@ -42,7 +41,7 @@
 							<h2 class="features__title  features__title--city">Настоящий городок</h2>
 							<p class="features__text  features__text--city"><span class="features__item-number">-№<span class="title-counter"></span>-</span>Седона не атракцион для туристов, там течет своя жизнь</p>
 						</div>
-						<img class="features__image" src="img/photo-city@1x.jpg" width="320" height="260" alt="sedona-town">
+						<img class="features__image" src="img/photo-city@1x.jpg" width="320" height="260" alt="Город">
 						<div class="features-tags">
 							<div class="features-tags__item">
 								<h3 class="features-tags__title  features-tags__title--home"> Жилье</h3>
@@ -92,21 +91,19 @@
 <!--    Hotel-->
 				<div class="search-hotel">
 				  <div class="search-hotel__description">
-					  <b class="search-hotel__title">Заинтересовались?</b>
+					  <p class="search-hotel____text--emphasized"><strong>Заинтересовались?</strong></p>
 					  <p class="search-hotel__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения 	гостиниц в Седоне</p>
 					</div>
 					<a href="#" class="search-hotel__btn">Найти гостиницу</a>
 				</div>
-			</div>
-<!--    map-->
+				<!--    map-->
 				<div class="map"></div>
-		</main>
+		  </main>
 <!--    footer-->
-		<footer class="page-footer">
-			<div class="wrap">
+		  <footer class="page-footer">
 				<div class="page-footer__hashtag">#visitSedona</div>
 				<div class="social-block">
-					<ul>
+					<ul class="social-block__list">
 						<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
 						<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
 						<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
@@ -114,10 +111,10 @@
 				</div>
 				<div class="page-footer__copyright">Разработано
 					<a href="https://htmlacademy.ru/">
-						<img src="../../img/HTML-logo.png" width="27" height="34" alt="HTML Academy">
+						<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
 					</a>
 				</div>
-			</div>
-		</footer>
+		  </footer>
+		</div>
 	</body>
 </html>

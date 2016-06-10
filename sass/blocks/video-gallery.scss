@@ -1,11 +1,11 @@
-.video-gallery{
+.video-gallery {
   margin:0;
   position: relative;
   border-top: 1px solid $photo-gal-border;
   padding-top: 35px;
   padding-bottom:85px;
 
-    &::after{
+    &::after {
   content: "";
   display: block;
   width: 280px;
@@ -18,7 +18,7 @@
   }
 }
 
-.video-gallery__title{
+.video-gallery__text--emphasized {
   display: block;
   margin:0;
   text-align: center;
@@ -26,7 +26,7 @@
   line-height: 26px;
   margin-bottom:25px;
 }
-.video-gallery__promo{
+.video-gallery__text {
   display: block;
   margin:0;
   padding-left: 30px;

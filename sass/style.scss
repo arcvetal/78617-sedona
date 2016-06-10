@@ -1,12 +1,12 @@
 @import "variables.scss";
 
-@import "blocks/body.scss";
+@import "global/global.scss"
 
-@import "blocks/wrap.scss";
+@import "blocks/wrapper.scss";
 
 @import "blocks/main-nav.scss";
 
-@import "blocks/logo-link.scss";
+@import "blocks/logo.scss";
 
 @import "blocks/wallpaper.scss";
 
