@@ -1,6 +1,8 @@
+@import "normalize.scss";
+
 @import "variables.scss";
 
-@import "global/global.scss"
+@import "global/global.scss";
 
 @import "blocks/wrapper.scss";
 
@@ -29,4 +31,5 @@
 @import "blocks/form.scss";
 
 @import "fonts.scss";
+
 

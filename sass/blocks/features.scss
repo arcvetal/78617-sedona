@@ -1,61 +1,66 @@
 .features {
   position: relative;
+  counter-reset: list;
 
-    &::before{
-  content: "";
-  background: url(../../img/promo-klin.png);
-  width: 320px;
-  height: 37px;
-  position: absolute;
-  left: 0px;
-  top: -20px;
-  z-index: 10;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    z-index: 1;
+    border: 160px solid transparent;
+    border-top: 18px solid white;
+    box-sizing: border-box;
   }
 }
+
 .features__item {
   background-color: $feat-item-logo;
 
-    &--city,
-    &--bridge {
-  background-color: $label-color;
+  &--city,
+  &--bridge {
+    background-color: $label-color;
   }
 }
 
 .features__description {
-  box-sizing: border-box;
   width: 280px;
   height: 167px;
+  padding-top: 28px;
+  margin: 0 auto;
   border-bottom: 1px solid;
   border-bottom-color: $featurea-border-bot;
+  box-sizing: border-box;
   text-align: center;
-  margin: 0 auto;
-  padding-top: 28px;
+  counter-increment: list;
 
-    &--city {
-  height: 211px;
-  padding-top: 60px;
+  &--city {
+    height: 211px;
+    padding-top: 60px;
+    border: none;
   }
 
-    &--bridge {
-  height: 190px;
-  padding-top: 40px;
+  &--bridge {
+    height: 190px;
+    padding-top: 40px;
+    border: none;
   }
 
-    &--tourist {
-  border-bottom: 1px solid;
-  border-bottom-color: transparent;
+  &--tourist {
+    border-bottom: 1px solid;
+    border-bottom-color: transparent;
   }
 }
 
 .features__title {
-  font-size: 18px;
-  line-height: 26px;
   margin-bottom: -14px;
   margin-top: 0px;
+  font-size: 18px;
+  line-height: 26px;
 
-    &--city,
-    &--bridge {
-  color: #ffffff;
+  &--city,
+  &--bridge {
+    color: #ffffff;
   }
 }
 
@@ -66,20 +71,24 @@
   line-height: 21px;
   font-weight: 400;
 
-    &--city,
-    &--bridge{
-  color: #ffffff;
+  &--city,
+  &--bridge{
+    color: #ffffff;
   }
-}
-
-.title-counter {
-
 }
 
 .features__item-number {
   display: block;
   padding-top: 10px;
   padding-bottom: 16px;
+
+  &::before {
+     content:"- ";
+  }
+
+  &::after {
+    content: counter(list)" -";
+  }
 }
 
 .features__item--open{
@@ -91,7 +100,7 @@
   display: block;
 }
 
-.features-tags {
+.features__tag {
   background-color: white;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -99,47 +108,53 @@
   padding-right: 40px;
 }
 
-.features-tags__item {
+.features__item--tag {
   margin-bottom: 25px;
 }
 
-.features-tags__title {
-  font-size: 18px;
-  line-height: 26px;
-  position: relative;
+.features__title {
 
-    &::before{
-  content: "";
-  position: absolute;
-  left: -52px;
-  top: -5px;
-  background-image: url(../../img/sprite-tags.png);
-  background-repeat: no-repeat;
+  &--tag{
+    font-size: 18px;
+    line-height: 26px;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -52px;
+      top: -5px;;
+      background-repeat: no-repeat;
+    }
   }
 
-    &--home::before {
-  content: "";
-  width: 40px;
-  height: 37px;
-  background-position: -3px 0;
+  &--home::before {
+    content: "";
+    width: 40px;
+    height: 37px;
+    background: url(/img/icon-house.svg) no-repeat;
+    background-size: contain;
   }
 
-    &--gift::before {
-  content: "";
-  width: 35px;
-  height: 40px;
-  background-position: -5px -128px;
+  &--gift::before {
+    content: "";
+    width: 35px;
+    height: 40px;
+    background: url(/img/icon-gift.svg) no-repeat;
+    background-size: contain;
   }
 
-    &--food::before {
-  content: "";
-  width: 40px;
-  height: 35px;
-  background-position: 0px -245px;
+  &--food::before {
+    content: "";
+    width: 40px;
+    height: 35px;
+    background: url(/img/icon-burger.svg) no-repeat;
+    background-size: contain;
   }
 }
 
-.features-tags__text {
+.features__text--tag {
   color: #333333;
   font-size: 14px;
   line-height: 21px;

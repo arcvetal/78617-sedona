@@ -1,8 +1,12 @@
-.logo-link a {
-  width: 102px;
-  height: 83px;
-  position: absolute;
-  top: 224px;
-  left:110px;
-  z-index: 10;
+.logo {
+  position: relative;
+
+  & a {
+    position: absolute;
+    top: -57px;
+    left:110px;
+    z-index: 10;
+    width: 102px;
+    height: 83px;
+  }
 }
