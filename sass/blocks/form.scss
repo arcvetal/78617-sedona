@@ -1,0 +1,242 @@
+.form__title {
+  padding: 0;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center
+}
+
+.form__fieldset {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $photo-gal-border;
+  box-sizing: border-box;
+}
+.form__field {
+  display:block;
+  width: 280px;
+}
+
+.form__label {
+  margin-right: 16px;
+  color: #333333;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  &--top {
+    display: block;
+    padding-left: 22px;
+    margin-bottom: 6px;
+  }
+
+  &--bold {
+    display:block;
+    position: relative;
+    padding-left: 70px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: none;
+  }
+
+  &--check {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.form__item {
+  display: inline-block;
+  height: 58px;
+  padding-left: 22px;
+  margin-bottom: 20px;
+  border: none;
+  box-sizing: border-box;
+  background-color: $input-color;
+  font-size: 18px;
+  font-weight: 700;
+
+  &--phone {
+    position: relative;
+    min-width: 280px;
+    background-image: url(/img/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 242px 20px;
+  }
+
+
+  &--email {
+    min-width: 280px;
+    margin-bottom: 5px;
+    background-image: url(/img/icon-mail.svg);
+    background-repeat: no-repeat;
+    background-position: 242px 20px;
+  }
+
+  &--radio {
+    display: none;
+
+    &+.form__label--bold::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 22px;
+      height: 22px;
+      border: 17px solid;
+      border-color:$input-color;
+      border-radius: 50%;
+      background-color: $input-color;
+    }
+
+    &:checked+.form__label--bold::before {
+      background-color: #333333;
+    }
+  }
+
+  &--check {
+    display: none;
+
+    &+.form__label--bold::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 24px;
+      height: 24px;
+      border: 17px solid;
+      border-color:$input-color;
+      border-radius: 5px;
+      background-color: $input-color;
+    }
+
+    &:checked+.form__label--bold::before {
+      background:$input-color url(../../img/icon-tick.svg) no-repeat 0 5px;
+    }
+  }
+}
+
+.form__warning {
+  display: none;
+  padding-left: 20px;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: #ff5c5c;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.form__textarea {
+  width: 280px;
+  height: 160px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+  border: 0;
+  box-sizing: border-box;
+  resize: none;
+  color: #000000;
+  font-family: PTsans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: $input-color;
+}
+
+
+.btn-form {
+  display: block;
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
+  border: 0;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $label-color;
+}
+
+.form__fail-message {
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 347px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .15);
+  text-align: center;
+  background-color: white;
+}
+
+.form__fail-message--title {
+  display: block;
+  width:240px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.form__fail-message--text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn-form--fail-message{
+  width: 272px;
+}
+
+.form__succes-message {
+  display: none;
+  position: absolute;
+  width: 640px;
+  height: 347px;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .15);
+  text-align: center;
+  background-color: white;
+
+
+  &--promo {
+    height: 200px;
+    padding-top: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    box-sizing: border-box;
+  }
+
+  &--title {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  &--text {
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &--button-wrapper {
+    padding-top: 44px;
+    padding-bottom: 45px;
+    background-color: $input-color;
+  }
+}
+
+.btn-form--succes-massage{
+  width: 458px;
+}

@@ -1,0 +1,46 @@
+.social-block {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.social-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.social-block__item {
+  display: inline-block;
+  background-color: $label-color;
+  width: 46px;
+  height: 48px;
+  font-size: 0;
+  margin-right: 6px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &--tw {
+    background-image: url(/img/icon-twitter.svg);
+  }
+
+  &--fb {
+    background-image: url(/img/icon-facebook.svg);
+  }
+
+  &--youtube {
+    background-image: url(/img/icon-youtube.svg);
+  }
+
+  & a {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    font-size: 0;
+  }
+}

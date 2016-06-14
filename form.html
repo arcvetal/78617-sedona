@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
+	  <link rel="stylesheet" href="css/style.css">
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Седона: Форма</title>
 	</head>
-	<body>
-
-  <!--   	header-->
-		<header class="page-header">
-			<div class="wrap">
-				<nav class="main-nav">
-					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="#">Главная</a></li>
-						<li class="main-nav__item"><a href="#">Фото и видео</a></li>
-						<li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-						<li class="main-nav__item"><a href="#">Html academy</a></li>
-					</ul>
-					<button class="main-nav__toggle" type="button">Открыть меню</button>
-				</nav>
-				<div class="logo-link">
-					<a href="#">
-						<img src="http://placehold.it/102x83" width="102" height="83" alt="sedona-label">
-					</a>
-				</div>
-			</div>
-		</header>
-
-	<!--    main-->
-		<main class="main-content">
-			<div class="wrap">
+	<body class="body">
+    <div class="wrapper">
+<!--   	header-->
+		  <header class="page-header">
+			  <nav class="main-nav">
+				  <ul class="main-nav__list">
+					  <li class="main-nav__item"><a href="index.html">Главная</a></li>
+					  <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+					  <li class="main-nav__item"><a>Форма отзыва</a></li>
+					  <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+				  </ul>
+				  <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+			  </nav>
+			  <div class="logo">
+				  <a href="index.html">
+					  <img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+				  </a>
+			  </div>
+		  </header>
+<!--    main-->
+		  <main class="page-content">
 				<div class="wallpaper"></div>
 				<div class="promo">
 					<h1 class="promo__title">Оставьте свой отзыв</h1>
@@ -38,74 +36,95 @@
 				<form class="form" action="#" method="post">
 					<div class="form__fieldset">
 						<h3 class="form__title">Представьтесь, пожалуйста:</h3>
-<!--  name-->
-						<label class="form__label" for="name">ИМЯ:</label>
-						<input class="form__item  form__item--text" type="text" name="name" id="name" placeholder="Петр">
+<!-- name-->
+            <div class="form__field">
+						  <label class="form__label" for="name">ИМЯ:</label>
+						  <input class="form__item  form__item--text" type="text" name="name" id="name" value="Петр" size="20">
+						</div>
 <!--  second-name-->
-						<label class="form__label" for="second-name">ФАМИЛИЯ:</label>
-						<input class="form__item  form__item--text" type="text" name="second-name" id="second-name" placeholder="Иванов">
+            <div class="form__field">
+						  <label class="form__label" for="second-name">ФАМИЛИЯ:</label>
+						  <input class="form__item  form__item--text" type="text" name="second-name" id="second-name" value="Иванов" size="16">
+						</div>
 <!--  father-name-->
-						<label class="form__label" for="father-name">ОТЧЕСТВО:</label>
-						<input class="form__item  form__item--text" type="text" name="father-name" id="father-name" placeholder="Александрович">
+            <div class="form__field">
+						  <label class="form__label" for="father-name">ОТЧЕСТВО:</label>
+						  <input class="form__item  form__item--text" type="text" name="father-name" id="father-name" value="Александрович" size="16">
+						</div>
 					</div>
 <!--contacts-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Контактная информация</h3>
 <!--  Phone-->
-						<label class="form__label" for="cont-phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
-						<input class="form__item  form__item--text" type="tel" name="cont-phone" id="cont-phone" placeholder="Введите телефон">
-						<p class="form__warning">Ошибка, перепроверьте номер</p>
+            <div class="form__field">
+						  <label class="form__label  form__label--top" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН:</label>
+						  <input class="form__item  form__item--phone" type="tel" name="phone" id="phone" value="Введите телефон">
+						  <p class="form__warning">Ошибка, перепроверьте номер</p>
+						</div>
 <!--  E-mail-->
-						<label class="form__label" for="cont-email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-						<input class="form__item  form__item--text" type="email" name="cont-email" id="cont-email" placeholder="Введите e-mail">
+            <div class="form__field">
+						  <label class="form__label  form__label--top" for="email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+						  <input class="form__item  form__item--text  form__item--email" type="email" name="email" id="email" value="Введите e-mail">
+						</div>
 					</div>
 <!--impression-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Ваше общее впечатление</h3>
 <!--  radio-good-->
-						<input class="form__item  form__item--radio" type="radio" id="radio1" name="impres" value="good" checked>
-						<label class="form__label  form__label--bold" for="radio1">Скорее положительное</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--radio" type="radio" id="impression-good" name="impression" value="good" checked>
+						  <label class="form__label  form__label--bold" for="impression-good">Скорее положительное</label>
+						</div>
 <!--  radio-bad-->
-						<input class="form__item  form__item--radio" type="radio" id="radio2" name="impres" value="bad">
-						<label class="form__label  form__label--bold" for="radio2">Скорее отрицаельное</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--radio" type="radio" id="impression-bad" name="impression" value="bad">
+						  <label class="form__label  form__label--bold" for="impression-bad">Скорее отрицаельное</label>
+						</div>
 <!--  radio-dontknow-->
-						<input class="form__item  form__item--radio" type="radio" id="radio3"  name="impres" value="dontknow">
-						<label class="form__label  form__label--bold" for="radio3">Затрудняюсь ответить</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--radio" type="radio" id="impression-dontknow" name="impression" value="dontknow">
+						  <label class="form__label  form__label--bold" for="impression-dontknow">Затрудняюсь ответить</label>
+						</div>
 					</div>
 <!--places-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Посещенный достопримечательности:</h3>
 <!--  checkbox 1-->
-						<input class="form__item  form__item--check" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-						<label class="form__label  form__label--bold" for="devil-bridge">Мост Дьявола</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+						  <label class="form__label  form__label--bold  form__label--check" for="devil-bridge">Мост Дьявола</label>
+						</div>
 <!--  checkbox 2-->
-						<input class="form__item  form__item--check" type="checkbox" name="slide-park" id="slide-park" checked>
-						<label class="form__label  form__label--bold" for="slide-park">Слайд-парк</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="slide-park" id="slide-park" checked>
+						  <label class="form__label  form__label--bold  form__label--check" for="slide-park">Слайд-парк</label>
+						</div>
 <!--  checkbox 3-->
-						<input class="form__item  form__item--check" type="checkbox" name="rock-bell" id="rock-bell">
-						<label class="form__label  form__label--bold" for="rock-bell">Гора-Колокол</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="rock-bell" id="rock-bell">
+						  <label class="form__label  form__label--bold  form__label--check" for="rock-bell">Гора-Колокол</label>
+						</div>
 <!--  checkbox 4-->
-						<input class="form__item  form__item--check" type="checkbox" name="red-rocks" id="red-rocks" checked>
-						<label class="form__label  form__label--bold" for="red-rocks">Красные скалы</label>
+            <div class="form__field">
+						  <input class="form__item  form__item--check" type="checkbox" name="red-rocks" id="red-rocks" checked>
+						  <label class="form__label  form__label--bold  form__label--check" for="red-rocks">Красные скалы</label>
+						</div>
 					</div>
 <!--comment-block-->
 					<div class="form__fieldset">
 						<h3 class="form__title">Опишите свои эмоции:</h3>
-						<textarea class="form__textarea" name="subscribe" id="subscribe" cols="30" rows="10">
+						<textarea class="form__textarea" name="text-description" id="text-description" cols="30" rows="10">
 							Опишите подробно все свои восторги
 						</textarea>
-						<button class="form__btn btn" type="submit">Отправить отзыв</button>
 					</div>
+					<button class="btn-form" type="submit">Отправить отзыв</button>
 				</form>
-			</div>
-		</main>
-
-	<!--    footer-->
-		<footer class="page-footer">
-			<div class="wrap">
-				<h3 class="page-footer__hashtag"></h3>
+		  </main>
+<!--    footer-->
+		  <footer class="page-footer">
+				<div class="page-footer__hashtag">#visitSedona</div>
 				<div class="social-block">
-					<ul>
+					<ul class="social-block__list">
 						<li class="social-block__item  social-block__item--tw"><a href="#">Twitter</a></li>
 						<li class="social-block__item  social-block__item--fb"><a href="#">Facebook</a></li>
 						<li class="social-block__item  social-block__item--youtube"><a href="#">YouTube</a></li>
@@ -113,10 +132,23 @@
 				</div>
 				<div class="page-footer__copyright">Разработано
 					<a href="https://htmlacademy.ru/">
-						<img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+						<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
 					</a>
 				</div>
-			</div>
-		</footer>
+		  </footer>
+		</div>
+		<div class="form__fail-message">
+		  <strong class="form__fail-message--title">Что-то пошло не так!</strong>
+		  <p class="form__fail-message--text">Проверьте поля, выделеные красным, скорее всего вы забыли их заполнить.</p>
+		  <button class="btn-form  btn-form--fail-message">Ок</button>
+		</div>
+		<div class="form__succes-message">
+		  <div class="form__succes-message--promo">
+		    <strong class="form__succes-message--title">Ваш отзыв отправлен!</strong>
+		    <p class="form__succes-message--text">Спасибо за ваше участие, ваш отзыв уже поступилк нам. В ближайшее время мы опубликуем его на сайте.</p>
+		  </div>
+		  <div class="form__succes-message--button-wrapper">
+		  <button class="btn-form  btn-form--succes-message">Закрыть окно</button></div>
+		</div>
 	</body>
 </html>
