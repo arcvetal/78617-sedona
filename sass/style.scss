@@ -2,7 +2,11 @@
 
 @import "variables.scss";
 
-@import "global/global.scss";
+@import "global.scss";
+
+@import "blocks/page-header.scss";
+
+@import "blocks/btn.scss";
 
 @import "blocks/wrapper.scss";
 

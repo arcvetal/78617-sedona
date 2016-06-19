@@ -1,6 +1,6 @@
 .social-block {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .social-block__list {
@@ -42,5 +42,15 @@
     width: 46px;
     height: 48px;
     font-size: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .social-block {
+    float: left;
+    width: 33%;
+    padding-top: 35px;
+    box-sizing: border-box;
   }
 }

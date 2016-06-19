@@ -6,6 +6,26 @@ $footer-bg-color:#fefefe;
 $featurea-border-bot:#d6d6d6;
 $photo-gal-border:#e5e5e5;
 $input-color:#f2f2f2;
-@mixin bg-red{
-  background-color: red;
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1200px);
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
 }
+//@mixin container() {
+//  width: 320px;
+//  margin: 0 auto;
+//
+//  @media (min-width: 768px) {
+//    width: 768px;
+//  }
+//
+//  @media (min-width: 1200px) {
+//    width: 1200px;
+//  }
+//}

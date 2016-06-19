@@ -15,3 +15,34 @@
     background-size: 280px, cover, auto;
   }
 }
+
+@media (min-width: 768px) {
+  .wallpaper {
+    height: 290px;
+  background: url(/img/text-sedona.svg) no-repeat 50% 50%,
+    url(/img/intro-triangle.png) no-repeat 50% 100%,
+    url(../../img/bg-back-mobile@1x.jpg) no-repeat 50% 100%;
+  background-size: 457px, contain, 100%;
+
+    &--full {
+      height: 518px;
+      background: url(/img/text-sedona-index.svg) border-box no-repeat 50% 45%,
+      url(/img/intro-triangle.png) no-repeat 100% 100%,
+      url(../../img/bg-back-mobile@1x.jpg) no-repeat 50% 0;
+      background-size: 460px, contain, cover;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+
+    .wallpaper--full {
+    height: 518px;
+    background: url(/img/text-sedona-index.svg) border-box no-repeat 50%,
+      url(/img/intro-triangle.png) no-repeat 100% 100%,
+      url(../../img/bg-back-mobile@1x.jpg) no-repeat 50% 25%;
+    background-size: 460px, contain, cover;
+  }
+
+}

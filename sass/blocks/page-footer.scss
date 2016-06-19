@@ -1,11 +1,12 @@
 .page-footer {
-  height: 233px;
-  padding-top: 31px;
+//  height: 233px;
+//  padding-top: 31px;
   background-color: $footer-bg-color;
 }
 
 .page-footer__hashtag {
-  margin-bottom: 41px;
+  padding-top: 30px;
+  margin-bottom: 35px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -14,6 +15,7 @@
 
 
 .page-footer__copyright {
+  padding-bottom: 25px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -24,5 +26,34 @@
     height: 34px;
     margin-left: 5px;
     vertical-align: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    height: 120px;
+    box-sizing: border-box;
+    @include clearfix;
+  }
+  .page-footer__hashtag {
+    float: left;
+    width: 33%;
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+
+  .page-footer__copyright {
+    float: right;
+    width: 33%;
+    padding-top: 37px;
+    box-sizing: border-box;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .page-footer__copyright {
+    text-align: right;
+    padding-right: 44px;
   }
 }

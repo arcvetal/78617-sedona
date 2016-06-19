@@ -4,11 +4,14 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
   line-height: 24px;
 }
 
 .promo__title {
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 0px;
   margin-bottom: 30px;
   font-size: 18px;
@@ -18,9 +21,36 @@
 .promo__text {
   padding-left: 3px;
   padding-right: 3px;
+  padding-bottom: 20px;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .promo {
+  position: static;
+  height: 206px;
+  padding-top: 45px;
+  padding-left: 135px;
+  padding-right: 135px;
+  line-height: 26px;
+  box-sizing: border-box;
+  margin: 0;
+  }
+
+  .promo__title {
+  margin-bottom: 35px;
+  font-size: 21px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo {
+
+  padding-left: 355px;
+  padding-right: 355px;
+  }
 }

@@ -3,10 +3,23 @@
 
   & a {
     position: absolute;
-    top: -57px;
+    top: 0px;
     left:110px;
-    z-index: 10;
+    z-index: 1;
     width: 102px;
     height: 83px;
   }
+}
+
+ @media (min-width: 768px) {
+   .logo a {
+    left:333px;
+    top: -56px;
+   }
+  }
+
+@media (min-width: 1200px) {
+  .logo a {
+    left:548px;
+   }
 }

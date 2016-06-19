@@ -1,0 +1,11 @@
+.page-header{
+  position: relative;
+  width: 100%;
+  height: 56px;
+  margin-top: 222px;
+  background-color: white;
+
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
