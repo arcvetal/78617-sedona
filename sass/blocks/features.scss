@@ -7,7 +7,7 @@
     position: absolute;
     width: 320px;
     height: 37px;
-    top:-18px;
+    top:-19px;
     z-index: 2;
     border: 160px solid transparent;
     border-top: 18px solid white;
@@ -31,14 +31,14 @@
   counter-increment: list;
 
   &--blue{
-    padding-top: 20px;
+    padding-top: 23px;
     background-color: $label-color;
   }
 }
 
 .features__title {
-  padding-top: 30px;
-  padding-bottom: 5px;
+  padding-top: 26px;
+  padding-bottom: 10px;
    margin: 0;
   font-size: 18px;
   line-height: 26px;
@@ -46,7 +46,7 @@
   &--blue {
     color: #ffffff;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 }
 
@@ -55,8 +55,8 @@
   width: 280px;
   margin: 0 auto;
   padding-bottom: 27px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 11px;
+  padding-right: 11px;
   border-bottom: 1px solid;
   border-bottom-color: $featurea-border-bot;
   box-sizing: border-box;
@@ -81,8 +81,8 @@
 
 .features__item-number {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 16px;
   text-align: center;
 
   &::before {
@@ -102,17 +102,18 @@
 
 .features__tag {
   background-color: white;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 10px;
   padding-left: 70px;
   padding-right: 40px;
 }
 
 .features__tag-item {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .features__tag-title {
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
   position: relative;
@@ -122,16 +123,12 @@
   &::before {
     content: "";
     position: absolute;
-    left: -52px;
-    top: -5px;;
+    left: -48px;
+    top: -9px;;
     background-repeat: no-repeat;
   }
 
   &--home::before {
-//    content: "";
-//    position: absolute;
-//    left: -52px;
-//    top: -5px;;
     width: 40px;
     height: 37px;
     background: url(/img/icon-house.svg) no-repeat;
@@ -139,10 +136,8 @@
   }
 
   &--gift::before {
-//    content: "";
-//    position: absolute;
-//    left: -52px;
-//    top: -5px;;
+    left: -45px;
+    top: -12px;;
     width: 35px;
     height: 40px;
     background: url(/img/icon-gift.svg) no-repeat;
@@ -150,10 +145,8 @@
   }
 
   &--food::before {
-//    content: "";
-//    position: absolute;
-//    left: -52px;
-//    top: -5px;;
+    left: -51px;
+    top: -5px;;
     width: 40px;
     height: 35px;
     background: url(/img/icon-burger.svg) no-repeat;

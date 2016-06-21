@@ -8,19 +8,45 @@
 }
 
 .form__fieldset {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 18px;
+  padding-top: 19px;
+  padding-bottom: 4px;
   border-top: 1px solid $photo-gal-border;
   box-sizing: border-box;
+
+  &--impress {
+    padding-top: 19px;
+    padding-bottom: 18px;
+  }
+
+  &--contacts-block {
+    padding-bottom: 10px;
+  }
+
+  &--places-block {
+    padding-bottom: 1px;
+  }
+
+}
+
+.form__wrapper-field--places-block {
+  padding-top: 0px;
 }
 .form__field {
-  display:block;
+  display:flex;
+  align-items: baseline;
   width: 280px;
+  padding-bottom: 21px;
+
+  &--wide {
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+  }
+
 }
 
 .form__label {
-  margin-right: 16px;
+  margin-right: 18px;
   color: #333333;
   font-size: 14px;
   line-height: 24px;
@@ -29,15 +55,16 @@
   &--thin {
     display: block;
     padding-left: 22px;
-    margin-bottom: 6px;
+    padding-top: 2px;
+    margin-bottom: 8px;
   }
 
   &--bold {
     display:block;
     position: relative;
-    padding-left: 70px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-left: 77px;
+    padding-top: 19px;
+    padding-bottom: 4px;
     line-height: 26px;
     color: #000000;
     font-size: 18px;
@@ -48,8 +75,8 @@
   }
 
   &--check {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 13px;
+    padding-bottom: 20px;
   }
 }
 
@@ -57,8 +84,9 @@
   display: inline-block;
   position: relative;
   height: 58px;
-  padding-left: 22px;
-  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 23px;
+//  margin-bottom: 22px;
   border: none;
   box-sizing: border-box;
   background-color: $input-color;
@@ -76,8 +104,8 @@
       content: "";
       display: inline-block;
       position: absolute;
-      left: 0px;
-      top: 0px;
+      left: 1px;
+      top: 7px;
       width: 22px;
       height: 22px;
       border: 17px solid;
@@ -99,7 +127,7 @@
       display: inline-block;
       position: absolute;
       left: 0px;
-      top: 0px;
+      top: -2px;
       width: 24px;
       height: 24px;
       border: 17px solid;
@@ -133,11 +161,12 @@
 }
 
 .form__warning {
-  display: none;
-  padding-left: 20px;
+//  display: none;
+  padding-left: 22px;
+  padding-top: 2px;
   margin: 0;
-  margin-top: 12px;
-  margin-bottom: 20px;
+//  margin-top: 6px;
+//  margin-bottom: 20px;
   color: #ff5c5c;
   font-size: 14px;
   text-transform: none;
@@ -146,9 +175,9 @@
 .form__textarea {
   width: 280px;
   height: 160px;
-  padding-left: 15px;
+  padding-left: 22px;
   padding-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 39px;
   border: 0;
   box-sizing: border-box;
   resize: none;
@@ -163,6 +192,7 @@
 
 .btn--form {
   margin: 0 auto;
+  margin-bottom: 39px;
 }
 
 .form__required-field {
@@ -172,78 +202,76 @@
 .form__fail-message {
   display: none;
   position: absolute;
-  width: 400px;
-  height: 347px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 55px;
+  width: 320px;
+  height: 280px;
+  top:1344px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
   box-sizing: border-box;
-  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .15);
-  text-align: center;
   background-color: white;
+  text-align: center;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .15);
 }
 
-.form__fail-message--title {
-  display: block;
-  width:240px;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  box-sizing: border-box;
-  font-size: 30px;
-  line-height: 40px;
+.form__fail-title {
+  font-size: 18px;
+  line-height: 26px;
 }
 
-.form__fail-message--text {
-  margin-bottom: 30px;
-  font-size: 14px;
+.form__fail-text {
+  padding-top: 15px;
   line-height: 24px;
+  margin-bottom: 22px;
 }
 
 .btn--fail-message{
+  width: 180px;
   margin: 0 auto;
-  width: 272px;
+  font-size: 18px;
 }
 
 .form__succes-message {
-  display: none;
+//  display: none;
   position: absolute;
-  width: 640px;
-  height: 347px;
+  width: 320px;
+  height: 323px;
+  top: 1650px;
   box-sizing: border-box;
   box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .15);
   text-align: center;
   background-color: white;
+}
 
-
-  &--promo {
-    height: 200px;
-    padding-top: 60px;
-    padding-left: 110px;
-    padding-right: 110px;
+  .form__succes-promo {
+    height: 225px;
+    padding-top: 40px;
+    padding-left: 51px;
+    padding-right: 51px;
     box-sizing: border-box;
   }
 
-  &--title {
-    font-size: 30px;
+  .form__succes-title {
+    font-size: 18px;
     line-height: 26px;
   }
 
-  &--text {
-    margin-top: 35px;
+  .form__succes-text {
+    margin-top: 30px;
     font-size: 14px;
     line-height: 24px;
   }
 
-  &--button-wrapper {
-    padding-top: 44px;
-    padding-bottom: 45px;
+  .form__succes-button-wrapper {
+    padding-top: 18px;
+    padding-bottom: 22px;
     background-color: $input-color;
   }
-}
+
 
 .btn--succes-message{
   margin: 0 auto;
-  width: 458px;
+  width: 280px;
 }
 
 
@@ -309,7 +337,7 @@
   }
 
   .form__icon {
-    left: 500px;
+    left: 592px;
   }
 
   .form__wrapper-field--places-block {
@@ -357,6 +385,64 @@
     display: block;
   }
 
+  .form__fail-message {
+  width: 400px;
+  height: 347px;
+  top:1375px;
+  left: 185px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 55px;
+}
+
+  .form__fail-title {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+.form__fail-text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.btn--fail-message{
+  width: 272px;
+}
+
+.form__succes-message {
+  width: 640px;
+  height: 347px;
+  top:1255px;
+  left: 65px;
+}
+
+.form__succes-promo {
+  height: 200px;
+  padding-top: 60px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.form__succes-title {
+  font-size: 30px;
+}
+
+.form__succes-text {
+  margin-top: 35px;
+}
+
+.form__succes-button-wrapper {
+  padding-top: 44px;
+  padding-bottom: 45px;
+}
+
+.btn--succes-message{
+  width: 458px;
+}
+
 }
 
 
@@ -382,6 +468,10 @@
     flex-wrap: nowrap;
   }
 
+  .form__label--thin {
+    padding-left: 7px;
+  }
+
   .form__item {
     width: 100%;
   }
@@ -404,7 +494,11 @@
   }
 
   .form__icon {
-    left: 400px;
+    left: 344px;
+  }
+
+  .form__icon--email{
+    left: 422px;
   }
 
   .form__text-hidden {
@@ -422,5 +516,33 @@
   .form__textarea {
     width: 960px;
   }
+
+  .form__send {
+    display: flex;
+    width: 960px;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .btn--form {
+    width: 324px;
+    margin: 0;
+    margin-right: auto;
+
+  }
+
+  .form__required-field {
+    display: block;
+  }
+
+  .form__fail-message {
+    top: 1210px;
+    left: 400px;
+  }
+
+  .form__succes-message {
+
+  }
+
 }
 

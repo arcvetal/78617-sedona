@@ -1,6 +1,6 @@
 .main-nav__list {
   position: absolute;
-  bottom:56px;
+  bottom:54px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -44,6 +44,8 @@
     position: absolute;
     width:23px;
     height:3px;
+    top: 13px;
+    left: 2px;
     cursor:pointer;
     border-top: 1px solid #c0d9e8;
     border-bottom: 1px solid #c0d9e8;
@@ -53,7 +55,7 @@
       content: "";
       display:block;
       position: absolute;
-      bottom:7px;
+      bottom:8px;
       width:23px;
       height:4px;
       background-color: #81b3d2;
@@ -63,7 +65,7 @@
       content: "";
       display:block;
       position: absolute;
-      top:7px;
+      top:8px;
       width:23px;
       height:4px;
       background-color: #81b3d2;

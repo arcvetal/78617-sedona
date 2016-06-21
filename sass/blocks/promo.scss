@@ -1,10 +1,10 @@
 .promo {
   position: relative;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 39px;
+  padding-left: 19px;
+  padding-right: 19px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   text-align: center;
   line-height: 24px;
 }
@@ -13,20 +13,19 @@
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
   font-weight: 700;
 }
 
 .promo__text {
-  padding-left: 3px;
-  padding-right: 3px;
-  padding-bottom: 20px;
+  padding-bottom: 6px;
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   color: #333333;
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 @media (min-width: 768px) {
@@ -42,14 +41,18 @@
   }
 
   .promo__title {
-  margin-bottom: 35px;
-  font-size: 21px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 35px;
+
+    &--biger {
+      font-size: 30px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .promo {
-
   padding-left: 355px;
   padding-right: 355px;
   }
