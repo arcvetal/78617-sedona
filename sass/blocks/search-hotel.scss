@@ -20,14 +20,14 @@
 .search-hotel__text {
   color: #333333;
   font-size: 13.9px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
   text-align: center;
 
   &--emphasized {
     font-size: 21px;
-    line-height: 26px;
     font-weight: 700;
+    line-height: 26px;
   }
 }
 
@@ -35,13 +35,16 @@
   .search-hotel {
     height: 318px;
   }
+
   .search-hotel__description {
     width: 435px;
   }
+
   .search-hotel__text--emphasized {
-      font-size: 30px;
+    font-size: 30px;
     line-height: 26px;
   }
+
   .btn--search-hotel {
     width: 458px;
   }

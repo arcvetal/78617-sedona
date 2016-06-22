@@ -1,40 +1,45 @@
 .main-nav__list {
   position: absolute;
-  bottom:54px;
   width: 100%;
+  bottom:54px;
   padding: 0;
   margin: 0;
   list-style: none;
   background-color: $menu-bg-color;
 }
-.main-nav__item--visible-hidden {
-  display: none;
-}
-.main-nav__item a {
-  display: block;
-  height: 55px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 1px;
-  box-sizing: border-box;
-  text-align: center;
-  text-decoration: none;
-  color: $menu-text-color;
-  line-height: 56px;
-  font-size: 18px;
-  font-weight: 700;
-  background-color: $menu-bg-color;
-  box-shadow: inset 0px 2px 0px -1px rgba(255, 255, 255, 0.2),
-  0px 2px 0px 0px rgba(1, 1, 1, 0.2);
+
+.main-nav__item {
+  &--visible-hidden {
+    display: none;
+  }
+
+  & a {
+    display: block;
+    height: 55px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 0px -1px rgba(255, 255, 255, 0.2), 0px 2px 0px 0px rgba(1, 1, 1, 0.2);
+    color: $menu-text-color;
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    background-color: $menu-bg-color;
+  }
 }
 
+
 .main-nav__toggle {
-  display: block;
   position: absolute;
-  right: 20px;
-  top:13px;
+  display: block;
   height: 25px;
   width: 25px;
+  top:13px;
+  right: 20px;
   border:none;
   font-size: 0;
   background-color: white;
@@ -42,8 +47,8 @@
   & span {
     display:block;
     position: absolute;
-    width:23px;
     height:3px;
+    width:23px;
     top: 13px;
     left: 2px;
     cursor:pointer;
@@ -51,23 +56,23 @@
     border-bottom: 1px solid #c0d9e8;
     background-color: #81b3d2;
 
-    &::before{
+    &::before {
       content: "";
-      display:block;
       position: absolute;
-      bottom:8px;
-      width:23px;
+      display:block;
       height:4px;
+      width:23px;
+      bottom:8px;
       background-color: #81b3d2;
     }
 
     &::after {
       content: "";
-      display:block;
       position: absolute;
-      top:8px;
-      width:23px;
+      display:block;
       height:4px;
+      width:23px;
+      top:8px;
       background-color: #81b3d2;
     }
   }
@@ -75,19 +80,22 @@
 
 .main-nav__toggle--active span {
   position: absolute;
-  top:-195px;
+  top:-208px;
+  left: 0px;
   border: none;
   background:none;
 
   &::before {
+    width:28px;
     bottom:0;
     transform: rotate(45deg) translateX(0.5px);
     background-color: white;
   }
 
   &::after {
+    width:28px;
     top:0;
-    transform:rotate(-45deg) translateX(0.5px);
+    transform: rotate(-45deg) translateX(0.5px);
     background-color: white;
   }
 }
@@ -96,31 +104,33 @@
   .main-nav__list {
     position: static;
     background-color: transparent;
+
+    @include clearfix
   }
 
-  @include clearfix
 
   .main-nav__item {
     float: left;
     width: 20%;
+
+    & a {
+      box-shadow: none;
+      color: black;
+      font-size: 14px;
+      background-color: transparent;
+
+      &:nth-child(2+n) {
+        float: right;
+      }
+    }
+
+    &--visible-hidden {
+      display:block;
+    }
   }
 
-  .main-nav__item--visible-hidden {
-    display:block;
-  }
-  .main-nav__item a {
-    color: black;
-    background-color: transparent;
-    box-shadow: none;
-  }
-  .main-nav__item a:nth-child(2+n) {
-    float: right;
-  }
   .main-nav__toggle {
     display: none;
   }
 }
 
-//@media (min-width: 1200px) {
-//
-//}

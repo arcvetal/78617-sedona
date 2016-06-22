@@ -1,6 +1,4 @@
 .page-footer {
-//  height: 233px;
-//  padding-top: 31px;
   background-color: $footer-bg-color;
 }
 
@@ -17,13 +15,13 @@
 .page-footer__copyright {
   padding-bottom: 25px;
   font-size: 14px;
-  line-height: 26px;
   font-weight: 400;
+  line-height: 26px;
   text-align: center;
 
   & img {
-    width: 27px;
     height: 34px;
+    width: 27px;
     margin-left: 9px;
     vertical-align: bottom;
   }
@@ -33,8 +31,10 @@
   .page-footer {
     height: 120px;
     box-sizing: border-box;
+
     @include clearfix;
   }
+
   .page-footer__hashtag {
     float: left;
     width: 33%;
@@ -53,7 +53,7 @@
 
 @media (min-width: 1200px) {
   .page-footer__copyright {
-    text-align: right;
     padding-right: 44px;
+    text-align: right;
   }
 }
