@@ -51,6 +51,13 @@
     float: left;
     width: 33%;
     padding-top: 35px;
+    padding-left: 7px;
     box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-block {
+    padding-left: 11px;
   }
 }

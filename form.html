@@ -22,16 +22,20 @@
 				</nav>
 				<div class="logo">
 					<a href="index.html">
-						<img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+						<picture>
+					    <source media="(min-width: 1200px)" srcset="/img/logo-sedona-desktop.svg" wi>
+					    <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
+						  <img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+						</picture>
 					</a>
 				</div>
 		  </header>
 <!--    main-->
 		  <main class="page-content">
-				<div class="wallpaper"></div>
+				<div class="wallpaper  wallpaper--middle"></div>
 				<div class="promo">
-					<h1 class="promo__title  promo__title--biger">Оставьте свой отзыв</h1>
-					<p class="promo__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+					<h1 class="promo__title  promo__title--bigest">Оставьте свой отзыв</h1>
+					<p class="promo__text  promo__text--shorter">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 				</div>
 <!--name-block-->
 				<form class="form" action="#" method="post">
@@ -57,10 +61,10 @@
 					</div>
 <!--contacts-block-->
 					<div class="form__fieldset  form__fieldset--contacts-block">
-						<h3 class="form__title">Контактная информация</h3>
+						<h3 class="form__title  form__title--contact">Контактная информация:</h3>
 <!--  Phone-->
            <div class="form__wrapper-field  form__wrapper-field--contacts">
-            <div class="form__field  form__field--wide">
+            <div class="form__field  form__field--wide  form__field--tall">
 						  <label class="form__label  form__label--thin" for="phone"><span class="form__text-hidden">КОНТАКТНЫЙ</span>ТЕЛЕФОН:</label>
 						  <input class="form__item  form__item--wide" type="tel" name="phone" id="phone" value="Введите телефон"><span class="form__icon  form__icon--phone"></span>
 						  <p class="form__warning">Ошибка, перепроверьте номер</p>
@@ -74,20 +78,20 @@
 					</div>
 <!--impression-block-->
 					<div class="form__fieldset  form__fieldset--impress">
-						<h3 class="form__title    form__title--left">Ваше общее впечатление</h3>
+						<h3 class="form__title  form__title--left  form__title--impress">Ваше общее впечатление</h3>
 <!--  radio-good-->
            <div class="form__wrapper-field">
-            <div class="form__field">
+            <div class="form__field  form__field--radio">
 						  <input class="form__item  form__item--radio" type="radio" id="impression-good" name="impression" value="good" checked>
 						  <label class="form__label  form__label--bold" for="impression-good">Скорее положительное</label>
 						</div>
 <!--  radio-bad-->
-            <div class="form__field">
+            <div class="form__field  form__field--radio">
 						  <input class="form__item  form__item--radio" type="radio" id="impression-bad" name="impression" value="bad">
 						  <label class="form__label  form__label--bold" for="impression-bad">Скорее отрицаельное</label>
 						</div>
 <!--  radio-dontknow-->
-            <div class="form__field">
+            <div class="form__field  form__field--radio">
 						  <input class="form__item  form__item--radio" type="radio" id="impression-dontknow" name="impression" value="dontknow">
 						  <label class="form__label  form__label--bold" for="impression-dontknow">Затрудняюсь ответить</label>
 						</div>
@@ -95,7 +99,7 @@
 					</div>
 <!--places-block-->
 					<div class="form__fieldset  form__fieldset--places-block">
-						<h3 class="form__title">Посещенный достопримечательности:</h3>
+						<h3 class="form__title  form__title--visited">Посещенные достопримечательности:</h3>
 <!--  checkbox 1-->
             <div class="form__wrapper-field  form__wrapper-field--places-block">
             <div class="form__field  form__field--check  form__field--diavel">
@@ -121,7 +125,7 @@
 					</div>
 <!--comment-block-->
 					<div class="form__fieldset  form__fieldset--comment">
-						<h3 class="form__title">Опишите свои эмоции:</h3>
+						<h3 class="form__title  form__title--comment">Опишите свои эмоции:</h3>
 						<div class="form__wrapper-field  form__wrapper-field--comment">
 						  <textarea class="form__textarea" name="text-description" id="text-description" cols="30" rows="10">Опишите подробно все свои восторги
 						  </textarea>
@@ -129,7 +133,7 @@
 					</div>
 					<div class="form__send">
 					  <button class="btn  btn--form" type="submit">Отправить отзыв</button>
-					  <div class="form__required-field">*-обязательные поля</div>
+					  <div class="form__required-field">* ‒ обязательные поля</div>
 					</div>
 				</form>
 		  </main>

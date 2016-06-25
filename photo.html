@@ -22,20 +22,32 @@
 				</nav>
 				<div class="logo">
 					<a href="index.html">
-						<img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+						<picture>
+					    <source media="(min-width: 1200px)" srcset="/img/logo-sedona-desktop.svg" wi>
+					    <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
+						  <img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+						</picture>
 					</a>
 				</div>
 		  </header>
 <!--    main-->
 		  <main class="page-content">
 				<div class="wallpaper"></div>
-				<div class="promo">
+				<div class="promo  promo--biger">
 					<h1 class="promo__title  promo__title--biger">Фото и видео</h1>
-					<p class="promo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+					<p class="promo__text  promo__text--short">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 				</div>
 				<div class="photo-gallery">
 					<div class="photo-gallery__item  photo-gallery__item--wide">
-						<img src="/img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы" class="photo-gallery__image  photo-gallery__image--wide">
+            <div class="photo-gallery__image-wrapper  photo-gallery__image-wrapper--wide">
+					    <a href="/img/photo-1-desktop@2x.jpg">
+                <picture>
+					        <source media="(min-width: 1200px)" srcset="/img/photo-1-desktop@1x.jpg 1x, /img/photo-1-desktop@2x.jpg 2x">
+					        <source media="(min-width: 768px)" srcset="/img/photo-1-tablet@1x.jpg 1x, /img/photo-1-tablet@2x.jpg 2x">
+						      <img src="/img/photo-1-mobile@1x.jpg" srcset="/img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы" class="photo-gallery__image  photo-gallery__image--wide">
+						    </picture>
+              </a>
+            </div>
             <div class="photo-gallery__note">
               <div class="photo-gallery__sign">
                 <h3 class="photo-gallery__title">Неродные просторы</h3>
@@ -47,7 +59,15 @@
             </div>
 					</div>
 					<div class="photo-gallery__item">
-						<img src="/img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Местная растительность" class="photo-gallery__image">
+            <div class="photo-gallery__image-wrapper">
+              <a href="/img/photo-2-desktop@2x.jpg">
+					      <picture>
+					        <source media="(min-width: 1200px)" srcset="/img/photo-2-desktop@1x.jpg 1x, /img/photo-2-desktop@2x.jpg 2x">
+					        <source media="(min-width: 768px)" srcset="/img/photo-2-tablet@1x.jpg 1x, /img/photo-2-tablet@2x.jpg 2x">
+						      <img src="/img/photo-2-mobile@1x.jpg" srcset="/img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность" class="photo-gallery__image">
+						    </picture>
+						  </a>
+						</div>
 						<div class="photo-gallery__note">
               <div class="photo-gallery__sign">
 						    <h3 class="photo-gallery__title">Местная растительность</h3>
@@ -59,7 +79,15 @@
 						</div>
 					</div>
 					<div class="photo-gallery__item">
-						<img src="/img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Дорога на Север" class="photo-gallery__image">
+            <div class="photo-gallery__image-wrapper">
+              <a href="/img/photo-3-desktop@2x.jpg">
+					      <picture>
+					        <source media="(min-width: 1200px)" srcset="/img/photo-3-desktop@1x.jpg 1x, /img/photo-3-desktop@2x.jpg 2x">
+					        <source media="(min-width: 768px)" srcset="/img/photo-3-tablet@1x.jpg 1x, /img/photo-3-tablet@2x.jpg 2x">
+						      <img src="/img/photo-3-mobile@1x.jpg" srcset="/img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на Север" class="photo-gallery__image">
+						    </picture>
+						  </a>
+						</div>
 						<div class="photo-gallery__note">
               <div class="photo-gallery__sign">
 						    <h3 class="photo-gallery__title">Дорога на Север</h3>
@@ -71,7 +99,15 @@
 						</div>
 					</div>
 					<div class="photo-gallery__item">
-						<img src="/img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола" class="photo-gallery__image">
+            <div class="photo-gallery__image-wrapper">
+              <a href="/img/photo-4-desktop@2x.jpg">
+					      <picture>
+					        <source media="(min-width: 1200px)" srcset="/img/photo-4-desktop@1x.jpg 1x, /img/photo-4-desktop@2x.jpg 2x">
+					        <source media="(min-width: 768px)" srcset="/img/photo-4-tablet@1x.jpg 1x, /img/photo-4-tablet@2x.jpg 2x">
+						      <img src="/img/photo-4-mobile@1x.jpg" srcset="/img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола" class="photo-gallery__image">
+						    </picture>
+						  </a>
+						</div>
 						<div class="photo-gallery__note">
               <div class="photo-gallery__sign">
 						    <h3 class="photo-gallery__title">Мост дьявола</h3>
@@ -85,10 +121,14 @@
 				</div>
 				<div class="video-gallery">
 				  <div class="video-gallery__title">
-					  <p class="video-gallery__text  video-gallery__text--emphasized"><strong>Все еще сомневаетесь</strong></p>
+					  <p class="video-gallery__text  video-gallery__text--emphasized"><strong>Все еще сомневаетесь?</strong></p>
 					  <p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
 					</div>
-					<img class="video-gallery__player" src="/img/video-mobile@1x.jpg" width="320" height="200" alt="Видео">
+					<picture>
+					    <source media="(min-width: 1200px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
+					    <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
+						  <img class="video-gallery__player" src="/img/video-mobile@1x.jpg" srcset="/img/video-mobile@2x.jpg 2x" width="320" height="200" alt="Видео">
+				  </picture>
 					<div class="video-gallery__player-console">
               <div class="video-gallery__volume">
 					      <div class="video-gallery__volume-scale">
