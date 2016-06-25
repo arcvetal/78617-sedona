@@ -35,6 +35,17 @@ module.exports = function(grunt) {
       }
     },
 
+    csso: {
+      style: {
+        options: {
+          report: "qzip"
+        },
+        files: {
+          "css/style.min.css":["css/style.css"]
+        }
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
