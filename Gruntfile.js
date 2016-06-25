@@ -1,16 +1,13 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-browser-sync");
-  grunt.loadNpmTasks("grunt-contrib-watch");
-  grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-sass");
+  require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
     sass: {
       style: {
         files: {
-          "css/style.css": "sass/style.scss"
+          "build/css/style.css": "sass/style.scss"
         }
       }
     },
@@ -31,7 +28,7 @@ module.exports = function(grunt) {
             })
           ]
         },
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -41,9 +38,62 @@ module.exports = function(grunt) {
           report: "qzip"
         },
         files: {
-          "css/style.min.css":["css/style.css"]
+          "build/css/style.min.css":["build/css/style.css"]
         }
       }
+    },
+
+    imagemin: {
+      images: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          src: ["build/img/**/*.{png,jpg,gif}"]
+        }]
+      }
+    },
+
+    svgstore: {
+      options: {
+        svg: {
+          style: "display: none"
+        }
+      },
+      symbols: {
+        files: {
+          "build/img/symbols.svg": ["img/icon-*.svg"]
+        }
+      }
+    },
+
+    svgmin: {
+      symbols: {
+        files: [{
+          expand: true,
+          src: ["build/img/icon-*.svg"]
+        }]
+      }
+    },
+
+    copy: {
+      build: {
+        files:[{
+          expand: true,
+          src: [
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
     },
 
     browserSync: {
@@ -76,4 +126,13 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+
+  grunt.registerTask("build", [
+    "sass",
+    "postcss",
+    "csso",
+    "symbols",
+    "imagemin"
+  ]);
 };
