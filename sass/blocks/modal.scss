@@ -1,0 +1,143 @@
+.modal {
+  display: none;
+  position: absolute;
+  width: 320px;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .15);
+  text-align: center;
+  background-color: white;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.modal--fail {
+  height: 280px;
+  top: 1144px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.modal__text {
+  padding-top: 15px;
+  margin-bottom: 22px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.btn--fail {
+  width: 180px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.modal--succes {
+  height: 323px;
+  top: 1850px;
+}
+
+.modal__promo--succes {
+  height: 225px;
+  padding-top: 40px;
+  padding-left: 51px;
+  padding-right: 51px;
+  box-sizing: border-box;
+}
+
+.modal__text--succes {
+  margin-top: 30px;
+}
+
+.modal__btn-wrapper {
+  padding-top: 18px;
+  padding-bottom: 22px;
+  background-color: $input-color;
+}
+
+.btn--succes {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .modal--fail {
+    height: 347px;
+    width: 400px;
+    top: 1430px;
+    left: 185px;
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .modal__title {
+    display: block;
+    width: 215px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .btn--fail {
+    width: 272px;
+  }
+
+  .modal--succes {
+    height: 347px;
+    width: 640px;
+    top: 1255px;
+    left: 65px;
+  }
+
+  .modal__promo--succes {
+    height: 200px;
+    padding-top: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .modal__title--succes {
+    font-size: 30px;
+    width: 350px;
+    margin-bottom: 0;
+  }
+
+  .modal__text--succes {
+    margin-top: 10px;
+  }
+
+  .modal__btn-wrapper {
+    padding-top: 44px;
+    padding-bottom: 45px;
+  }
+
+  .btn--succes {
+    width: 458px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal--fail {
+    top: 1400px;
+    left: 400px;
+  }
+
+  .modal--succes {
+    top: 1350px;
+    left: 300px;
+  }
+}

@@ -12,10 +12,6 @@
   height: 280px;
 }
 
-.photo-gallery__image {
-  padding: 0;
-}
-
 .photo-gallery__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -31,8 +27,11 @@
 .photo-gallery__author {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #333333;
   text-transform: none;
+}
+
+.like-counter {
+	position: relative;
 }
 
 .like-counter__hand {
@@ -40,14 +39,14 @@
   position: relative;
   height: 21px;
   width: 23px;
-  background: url(/img/icon-like.svg) no-repeat;
+  background: url(../../img/icon-like.svg) no-repeat;
 }
 
 .like-counter__number{
-  display:block;
+  display: block;
   position: absolute;
-  top:2px;
-  left:36px;
+  top: 2px;
+  left: 36px;
   font-weight: 700;
 }
 
@@ -68,6 +67,10 @@
 
     &--wide {
       width: 648px;
+    }
+
+    &--dark {
+      background-color: #eaeaea;
     }
   }
 
@@ -94,7 +97,7 @@
     padding-bottom: 8px;
   }
 
-  .photo-gallery__sign {
+  .photo-gallery__descr {
     padding-top: 8px;
   }
 
@@ -157,10 +160,16 @@
 
   .photo-gallery__title,
   .photo-gallery__author {
+    padding-left: 2px;
     color: white;
   }
 
   .like-counter__hand {
-    background: url(/img/icon-like-white.svg) no-repeat;
+    background: url(../../img/icon-like-white.svg) no-repeat;
+    top: -3px;
+  }
+
+  .like-counter__number{
+    top: 0;
   }
 }

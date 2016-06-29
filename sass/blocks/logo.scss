@@ -1,27 +1,29 @@
 .logo {
-  position: relative;
+  position: absolute;
+	top: 1px;
+  left: 109px;
 
   & a {
-    position: absolute;
     height: 83px;
     width: 102px;
-    top: 1px;
-    left:109px;
     z-index: 1;
   }
 }
 
 @media (min-width: 768px) {
-  .logo a {
-    top: -56px;
-    left:333px;
+  .logo {
+    top: 0;
+    left: 333px;
   }
 }
 
 @media (min-width: 1200px) {
-  .logo a {
-    left:505px;
+	.logo {
+    left: 505px;
     height: 96px;
-    width: 188px;
-  }
+	
+		& a {
+    	width: 188px;
+  	}
+	}
 }

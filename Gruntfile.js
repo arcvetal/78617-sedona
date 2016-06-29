@@ -89,6 +89,13 @@ module.exports = function(grunt) {
           ],
           dest: "build"
         }]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["*.html"],
+          dest: "build"
+        }]
       }
     },
 
@@ -100,12 +107,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
           notify: false,
           open: true,
@@ -115,9 +122,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["copy:html"]
+      },
       style: {
         files: ["sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss"],
+        tasks: ["sass", "postcss", "csso"],
         options: {
           spawn: false
         }
@@ -129,6 +140,8 @@ module.exports = function(grunt) {
   grunt.registerTask("symbols", ["svgmin", "svgstore"]);
 
   grunt.registerTask("build", [
+    "clean",
+    "copy",
     "sass",
     "postcss",
     "csso",

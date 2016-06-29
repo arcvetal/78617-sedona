@@ -1,18 +1,26 @@
+.main-nav {
+	position: relative;
+}
 .main-nav__list {
+  display: none;
   position: absolute;
   width: 100%;
-  bottom:54px;
+  bottom: 54px;
   padding: 0;
   margin: 0;
   list-style: none;
   background-color: $menu-bg-color;
+	
+	&--active {
+		display: block;
+	}
+}
+
+.visible-hidden {
+	display: none;
 }
 
 .main-nav__item {
-  &--visible-hidden {
-    display: none;
-  }
-
   & a {
     display: block;
     height: 55px;
@@ -25,7 +33,6 @@
     color: $menu-text-color;
     line-height: 26px;
     font-size: 18px;
-    font-weight: 700;
     text-align: center;
     text-decoration: none;
     background-color: $menu-bg-color;
@@ -38,20 +45,19 @@
   display: block;
   height: 25px;
   width: 25px;
-  top:13px;
+  top: 13px;
   right: 20px;
-  border:none;
+  border: none;
   font-size: 0;
   background-color: white;
 
   & span {
-    display:block;
+    display: block;
     position: absolute;
-    height:3px;
-    width:23px;
+    height: 3px;
+    width: 23px;
     top: 13px;
     left: 2px;
-    cursor:pointer;
     border-top: 1px solid #c0d9e8;
     border-bottom: 1px solid #c0d9e8;
     background-color: #81b3d2;
@@ -59,20 +65,20 @@
     &::before {
       content: "";
       position: absolute;
-      display:block;
-      height:4px;
-      width:23px;
-      bottom:8px;
+      display: block;
+      height: 4px;
+      width: 23px;
+      bottom: 8px;
       background-color: #81b3d2;
     }
 
     &::after {
       content: "";
       position: absolute;
-      display:block;
-      height:4px;
-      width:23px;
-      top:8px;
+      display: block;
+      height: 4px;
+      width: 23px;
+      top: 8px;
       background-color: #81b3d2;
     }
   }
@@ -80,21 +86,21 @@
 
 .main-nav__toggle--active span {
   position: absolute;
-  top:-208px;
+  top: -208px;
   left: 0px;
   border: none;
-  background:none;
+  background: none;
 
   &::before {
-    width:28px;
-    bottom:0;
+    width: 28px;
+    bottom: 0;
     transform: rotate(45deg) translateX(0.5px);
     background-color: white;
   }
 
   &::after {
-    width:28px;
-    top:0;
+    width: 28px;
+    top: 0;
     transform: rotate(-45deg) translateX(0.5px);
     background-color: white;
   }
@@ -102,12 +108,16 @@
 
 @media (min-width: 768px) {
   .main-nav__list {
+    display: block;
     position: static;
     background-color: transparent;
 
     @include clearfix
   }
 
+.visible-hidden {
+	display: block;
+}
 
   .main-nav__item {
     float: left;
@@ -125,7 +135,7 @@
     }
 
     &--visible-hidden {
-      display:block;
+      display: block;
     }
   }
 

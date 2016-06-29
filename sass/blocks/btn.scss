@@ -2,12 +2,11 @@
   display: block;
   height: 58px;
   width: 280px;
+	padding-top: 15px;
   border: 0;
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 58px;
+	box-sizing: border-box;
+	font-size: 21px;
+  line-height: 26px;
   text-align: center;
-  text-transform: uppercase;
   background-color: $label-color;
 }

@@ -3,19 +3,6 @@
   position: relative;
   background: url(/img/icon-map-marker.svg) no-repeat 146px 161px,
   url(../../img/bg-map-mobile@1x.jpg) no-repeat;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 27px;
-    height: 27px;
-    top: 47%;
-    left: 51%;
-    z-index: 10;
-    background-image: url(/img/icon-map-marker.svg);
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: 768px) {

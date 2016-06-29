@@ -1,154 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-	  <link rel="stylesheet" href="css/style.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
 		<title>Cедона: Галерея</title>
 	</head>
 	<body class="body">
 		<div class="wrapper">
 <!--   	header-->
-		  <header class="page-header">
+			<header class="page-header">
 				<nav class="main-nav">
 					<ul class="main-nav__list">
-						<li class="main-nav__item"><a href="index.html">Главная</a></li>
+<!--По умолчанию при включенном JS, меню скрыто. Для раскрытия меню к классу "main-nav__list" нужно добавить класс "main-nav__list--active"-->
+						<li class="main-nav__item"><a  href="index.html">Главная</a></li>
 						<li class="main-nav__item"><a>Фото и видео</a></li>
-						<li class="main-nav__item  main-nav__item--visible-hidden"><a href="#"></a></li>
+						<li class="main-nav__item  visible-hidden"><a href="#"></a></li>
 						<li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
 						<li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
 					</ul>
-					<button class="main-nav__toggle  main-nav__toggle--active" type="button"><span>Открыть меню</span></button>
+					<button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+<!--		При нажатии на иконку "гамбургер" к классу "main-nav__list" (список меню) добавляется класс "main-nav__list--active", который расскрывает список меню, и к классу "page-header" добавляется класс "page-header--active", который дает отступ сверху (чтобы в этот отступ поместить список меню). Также к классу "main-nav__toggle" добавляется класс "main-nav__toggle--active" который преобразует его в "крестик".-->
 				</nav>
 				<div class="logo">
 					<a href="index.html">
 						<picture>
-					    <source media="(min-width: 1200px)" srcset="/img/logo-sedona-desktop.svg">
-					    <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
-						  <img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+							<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+							<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+							<img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
 						</picture>
 					</a>
 				</div>
-		  </header>
+			</header>
 <!--    main-->
-		  <main class="page-content">
+			<main class="page-content">
 				<div class="wallpaper"></div>
-				<div class="promo  promo--biger">
-					<h1 class="promo__title  promo__title--biger">Фото и видео</h1>
+				<div class="promo  promo--bigger">
+					<h1 class="promo__title  promo__title--bigger">Фото и видео</h1>
 					<p class="promo__text  promo__text--short">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
 				</div>
 				<div class="photo-gallery">
 					<div class="photo-gallery__item  photo-gallery__item--wide">
-            <div class="photo-gallery__image-wrapper  photo-gallery__image-wrapper--wide">
-					    <a href="/img/photo-1-desktop@2x.jpg">
-                <picture>
-					        <source media="(min-width: 1200px)" srcset="/img/photo-1-desktop@1x.jpg 1x, /img/photo-1-desktop@2x.jpg 2x">
-					        <source media="(min-width: 768px)" srcset="/img/photo-1-tablet@1x.jpg 1x, /img/photo-1-tablet@2x.jpg 2x">
-						      <img src="/img/photo-1-mobile@1x.jpg" srcset="/img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы" class="photo-gallery__image  photo-gallery__image--wide">
-						    </picture>
-              </a>
-            </div>
-            <div class="photo-gallery__note">
-              <div class="photo-gallery__sign">
-                <h3 class="photo-gallery__title">Неродные просторы</h3>
-                <p class="photo-gallery__author">Автор фото: Борис</p>
-              </div>
-              <div class="like-counter">
-                <span class="like-counter__hand"><span class="like-counter__number">1350</span></span>
-              </div>
-            </div>
-					</div>
-					<div class="photo-gallery__item">
-            <div class="photo-gallery__image-wrapper">
-              <a href="/img/photo-2-desktop@2x.jpg">
-					      <picture>
-					        <source media="(min-width: 1200px)" srcset="/img/photo-2-desktop@1x.jpg 1x, /img/photo-2-desktop@2x.jpg 2x">
-					        <source media="(min-width: 768px)" srcset="/img/photo-2-tablet@1x.jpg 1x, /img/photo-2-tablet@2x.jpg 2x">
-						      <img src="/img/photo-2-mobile@1x.jpg" srcset="/img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность" class="photo-gallery__image">
-						    </picture>
-						  </a>
+						<div class="photo-gallery__image-wrapper  photo-gallery__image-wrapper--wide">
+							<a href="img/photo-1-desktop@2x.jpg">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+									<source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+									<img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы" class="photo-gallery__image  photo-gallery__image--wide">
+								</picture>
+							</a>
 						</div>
 						<div class="photo-gallery__note">
-              <div class="photo-gallery__sign">
-						    <h3 class="photo-gallery__title">Местная растительность</h3>
-						    <p class="photo-gallery__author">Автор фото: Сергей</p>
-						  </div>
-						  <div class="like-counter">
-						    <span class="like-counter__hand"><span class="like-counter__number">143</span></span>
-						  </div>
+							<div class="photo-gallery__descr">
+								<h3 class="photo-gallery__title">Неродные просторы</h3>
+								<p class="photo-gallery__author">Автор фото: Борис</p>
+							</div>
+							<div class="like-counter">
+								<span class="like-counter__hand"></span>
+								<span class="like-counter__number">1350</span>
+							</div>
 						</div>
 					</div>
 					<div class="photo-gallery__item">
-            <div class="photo-gallery__image-wrapper">
-              <a href="/img/photo-3-desktop@2x.jpg">
-					      <picture>
-					        <source media="(min-width: 1200px)" srcset="/img/photo-3-desktop@1x.jpg 1x, /img/photo-3-desktop@2x.jpg 2x">
-					        <source media="(min-width: 768px)" srcset="/img/photo-3-tablet@1x.jpg 1x, /img/photo-3-tablet@2x.jpg 2x">
-						      <img src="/img/photo-3-mobile@1x.jpg" srcset="/img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на Север" class="photo-gallery__image">
-						    </picture>
-						  </a>
+						<div class="photo-gallery__image-wrapper">
+							<a href="img/photo-2-desktop@2x.jpg">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+									<source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+									<img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность" class="photo-gallery__image">
+								</picture>
+							</a>
 						</div>
 						<div class="photo-gallery__note">
-              <div class="photo-gallery__sign">
-						    <h3 class="photo-gallery__title">Дорога на Север</h3>
-						    <p class="photo-gallery__author">Автор фото: Петр</p>
-						  </div>
-						  <div class="like-counter">
-						    <span class="like-counter__hand  photo-gallery__like"><span class="like-counter__number">96</span></span>
-						  </div>
+							<div class="photo-gallery__descr">
+								<h3 class="photo-gallery__title">Местная растительность</h3>
+								<p class="photo-gallery__author">Автор фото: Сергей</p>
+							</div>
+							<div class="like-counter">
+								<span class="like-counter__hand"></span>
+								<span class="like-counter__number">143</span>
+							</div>
+						</div>
+					</div>
+					<div class="photo-gallery__item  photo-gallery__item--dark">
+						<div class="photo-gallery__image-wrapper">
+							<a href="img/photo-3-desktop@2x.jpg">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+									<source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+									<img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на Север" class="photo-gallery__image">
+								</picture>
+							</a>
+						</div>
+						<div class="photo-gallery__note">
+							<div class="photo-gallery__descr">
+								<h3 class="photo-gallery__title">Дорога на Север</h3>
+								<p class="photo-gallery__author">Автор фото: Петр</p>
+							</div>
+							<div class="like-counter">
+								<span class="like-counter__hand  photo-gallery__like"></span>
+								<span class="like-counter__number">96</span>
+							</div>
 						</div>
 					</div>
 					<div class="photo-gallery__item">
-            <div class="photo-gallery__image-wrapper">
-              <a href="/img/photo-4-desktop@2x.jpg">
-					      <picture>
-					        <source media="(min-width: 1200px)" srcset="/img/photo-4-desktop@1x.jpg 1x, /img/photo-4-desktop@2x.jpg 2x">
-					        <source media="(min-width: 768px)" srcset="/img/photo-4-tablet@1x.jpg 1x, /img/photo-4-tablet@2x.jpg 2x">
-						      <img src="/img/photo-4-mobile@1x.jpg" srcset="/img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола" class="photo-gallery__image">
-						    </picture>
-						  </a>
+						<div class="photo-gallery__image-wrapper">
+							<a href="img/photo-4-desktop@2x.jpg">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+									<source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+									<img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола" class="photo-gallery__image">
+								</picture>
+							</a>
 						</div>
 						<div class="photo-gallery__note">
-              <div class="photo-gallery__sign">
-						    <h3 class="photo-gallery__title">Мост дьявола</h3>
-						    <p class="photo-gallery__author">Автор фото: Антон</p>
-						  </div>
-						  <div class="like-counter">
-						    <span class="like-counter__hand"><span class="like-counter__number">254</span></span>
-						  </div>
+							<div class="photo-gallery__descr">
+								<h3 class="photo-gallery__title">Мост дьявола</h3>
+								<p class="photo-gallery__author">Автор фото: Антон</p>
+							</div>
+							<div class="like-counter">
+								<span class="like-counter__hand"></span>
+								<span class="like-counter__number">254</span>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="video-gallery">
-				  <div class="video-gallery__title">
-					  <p class="video-gallery__text  video-gallery__text--emphasized"><strong>Все еще сомневаетесь?</strong></p>
-					  <p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+					<div class="video-gallery__title">
+						<p class="video-gallery__text  video-gallery__text--emphasized"><strong>Все еще сомневаетесь?</strong></p>
+						<p class="video-gallery__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
 					</div>
 					<picture>
-					    <source media="(min-width: 1200px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
-					    <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
-						  <img class="video-gallery__player" src="/img/video-mobile@1x.jpg" srcset="/img/video-mobile@2x.jpg 2x" width="320" height="200" alt="Видео">
-				  </picture>
+						<source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+						<img class="video-gallery__player" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="200" alt="Видео">
+					</picture>
 					<div class="video-gallery__player-console">
-              <div class="video-gallery__volume">
-					      <div class="video-gallery__volume-scale">
-					        <div class="video-gallery__volume-slider"></div>
-					      </div>
-					    </div>
-					    <div class="video-gallery__wrapper-replay">
-					      <div class="video-gallery__player-replay"></div>
-					    </div>
-					    <div class="video-gallery__wrapper-subtitles">
-					      <div class="video-gallery__player-subtitles"></div>
-					    </div>
-					    <div class="video-gallery__wrapper-fullscreen">
-					      <div class="video-gallery__player-fullscreen"></div>
-					    </div>
+							<div class="video-gallery__volume">
+								<div class="video-gallery__volume-scale">
+									<div class="video-gallery__volume-slider"></div>
+								</div>
+							</div>
+							<div class="video-gallery__wrapper  video-gallery__wrapper--replay">
+								<div class="video-gallery__item  video-gallery__item--replay"></div>
+							</div>
+							<div class="video-gallery__wrapper  video-gallery__wrapper--subtitles">
+								<div class="video-gallery__item  video-gallery__item--subtitles"></div>
+							</div>
+							<div class="video-gallery__wrapper  video-gallery__wrapper--fullscreen">
+								<div class="video-gallery__item  video-gallery__item--fullscreen"></div>
+							</div>
 					</div>
 				</div>
-		  </main>
+			</main>
 <!--    footer-->
-		  <footer class="page-footer">
+			<footer class="page-footer">
 				<div class="page-footer__hashtag">#visitSedona</div>
 				<div class="social-block">
 					<ul class="social-block__list">

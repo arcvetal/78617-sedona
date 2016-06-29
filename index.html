@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <link rel="stylesheet" href="css/style.css">
+<html lang="ru" class="nojs">
+<!-- class="nojs" - этот класс добавлен для реализации работы меню при отключенном JS. При отключенном JS меню должно быть раскрыто (добавлены классы "page-header--active" и "main-nav__list--active") и убрана кнопка "гамбургер".
+При включенном JS этот класс будет убран-->
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body class="body">
-	  <div class="wrapper">
+		<div class="wrapper">
 <!--   	header-->
-		  <header class="page-header">
+			<header class="page-header">
 				<nav class="main-nav">
 					<ul class="main-nav__list">
+<!--По умолчанию при включенном JS, меню скрыто. Для раскрытия меню к классу "main-nav__list" нужно добавить класс "main-nav__list--active"-->
 						<li class="main-nav__item"><a>Главная</a></li>
 						<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-						<li class="main-nav__item  main-nav__item--visible-hidden"><a href="#"></a></li>
+						<li class="main-nav__item  visible-hidden"><a href="#"></a></li>
 						<li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
 						<li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
 					</ul>
-					<button class="main-nav__toggle  main-nav__toggle--active" type="button"><span>Открыть меню</span></button>
+					<button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+<!--		При нажатии на иконку "гамбургер" к классу "main-nav__list" (список меню) добавляется класс "main-nav__list--active", который расскрывает список меню, и к классу "page-header" добавляется класс "page-header--active", который дает отступ сверху (чтобы в этот отступ поместить список меню). Также к классу "main-nav__toggle" добавляется класс "main-nav__toggle--active" который преобразует его в "крестик".-->
 				</nav>
 				<div class="logo">
 					<a href="index.html">
-					  <picture>
-					    <source media="(min-width: 1200px)" srcset="/img/logo-sedona-desktop.svg">
-					    <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
-						  <img src="/img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+							<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+							<img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
 						</picture>
 					</a>
 				</div>
-		  </header>
+			</header>
 <!--    main-content-->
-		  <main class="page-content">
+			<main class="page-content">
 				<div class="wallpaper  wallpaper--full"></div>
 				<div class="promo">
 					<h1 class="promo__title"> Седона – небольщой городок в Аризоне, заслуживающий большего!</h1>
@@ -40,80 +44,78 @@
 <!--    content-->
 				<div class="features">
 <!--    	first-item-->
-          <div class="feature__wrapper-item">
-					  <div class="features__item  features__item--blue">
-						  <h2 class="features__title  features__title--blue">Настоящий городок</h2>
-						  <p class="features__text  features__text--blue"><span class="features__item-number"> №</span>Седона не атракцион для туристов, там течет своя жизнь</p>
-				    </div>
-            <div class="features__image-wrapper">
-              <picture>
-						    <img class="features__image" src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260" alt="Город">
-						  </picture>
-            </div>
-          </div>
-						<div class="features__tag">
-							<div class="features__tag-item">
-								<h3 class="features__tag-title  features__tag-title--home"> Жилье</h3>
-								<p class="features__tag-text">Рекомендуем пожить в настоящем мотеле, 	все как в кино!</p>
-							</div>
-							<div class="features__tag-item  features__tag-item--last">
-								<h3 class="features__tag-title  features__tag-title--gift">Сувениры</h3>
-								<p class="features__tag-text">Не только китайского, но и местного 	производства!</p>
-							</div>
-							<div class="features__tag-item">
-								<h3 class="features__tag-title  features__tag-title--food">Еда</h3>
-								<p class="features__tag-text">Всегда заказывайте фирменный бургер, вы 	не разочаруетесь!</p>
-							</div>
+					<div class="features__wrapper">
+						<div class="features__item  features__item--blue  features__item--counter">
+							<h2 class="features__title  features__title--blue">Настоящий городок</h2>
+							<p class="features__text  features__text--blue"><span class="features__item-number"> №</span>Седона не атракцион для туристов, там течет своя жизнь</p>
 						</div>
+						<div class="features__image-wrapper">
+							<picture>
+								<img class="features__image" src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260" alt="Город">
+							</picture>
+						</div>
+					</div>
+					<div class="features__wrapper  features__wrapper--tags">
+				  	<div class="features__item  features__item--tags">
+				  		<h3 class="features__title  features__title--tags  features__title--home"> Жилье</h3>
+				  		<p class="features__text  features__text--tags  features__text--home">Рекомендуем пожить в настоящем мотеле, 	все как в кино!</p>
+				  	</div>
+				  	<div class="features__item  features__item--tags  features__item--right">
+				  		<h3 class="features__title  features__title--tags  features__title--gift">Сувениры</h3>
+				  		<p class="features__text  features__text--tags  features__text--gift">Не только китайского, но и местного 	производства!</p>
+				  	</div>
+				  	<div class="features__item  features__item--tags">
+				  		<h3 class="features__title  features__title--tags  features__title--food">Еда</h3>
+				  		<p class="features__text  features__text--tags  features__text--food">Всегда заказывайте фирменный бургер, вы 	не разочаруетесь!</p>
+				  	</div>
+					</div>
 
 <!--    		second-item-->
-          <div class="feature__wrapper-item">
-					  <div class="features__item  features__item--blue  features__item--right">
-              <h2 class="features__title  features__title--blue">Там есть мост дьявола</h2>
-              <p class="features__text  features__text--blue  features__text--thin"><span class="features__item-number">№</span>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
-						  <div class="features__image-wrapper">
-                <picture>
-						      <img class="features__image" src="/img/photo-bridge@1x.jpg" srcset="/img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Каньон">
-						    </picture>
-
-						  </div>
-
+					<div class="features__wrapper">
+						<div class="features__item  features__item--blue  features__item--right  features__item--counter">
+							<h2 class="features__title  features__title--blue">Там есть мост дьявола</h2>
+							<p class="features__text  features__text--blue  features__text--thin"><span class="features__item-number">№</span>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>
+						<div class="features__image-wrapper">
+							<picture>
+								<img class="features__image" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Каньон">
+							</picture>
+						</div>
 					</div>
 <!--    		third item-->
-        <div class="feature__wrapper-item">
-					<div class="features__item  features__item--gray">
-						<h2 class="features__title">Небольшая площадь</h2>
-						<p class="features__text  features__text--gray"><span class="features__item-number">№</span>Все достопримечательности находятся очень близко</p>
-					</div>
+					<div class="features__wrapper">
+						<div class="features__item  features__item--gray  features__item--counter">
+							<h2 class="features__title">Небольшая площадь</h2>
+							<p class="features__text  features__text--gray"><span class="features__item-number">№</span>Все достопримечательности находятся очень близко</p>
+						</div>
 <!--    		fourth item-->
-					<div class="features__item  features__item--gray">
-						<h2 class="features__title">Красивая дорога</h2>
-						<p class="features__text  features__text--gray"><span class="features__item-number">№</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-					</div>
+						<div class="features__item  features__item--gray  features__item--counter">
+							<h2 class="features__title">Красивая дорога</h2>
+							<p class="features__text  features__text--gray"><span class="features__item-number">№</span>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</div>
 <!--    		fifth item-->
-					<div class="features__item  features__item--gray">
-            <h2 class="features__title">Мало туристов</h2>
-            <p class="features__text  features__text--gray  features__text--no-border"><span class="features__item-number">№</span>Большинство едет в Гранд Каньон и толпится там</p>
+						<div class="features__item  features__item--gray  features__item--counter">
+							<h2 class="features__title">Мало туристов</h2>
+							<p class="features__text  features__text--gray  features__text--no-border"><span class="features__item-number">№</span>Большинство едет в Гранд Каньон и толпится там</p>
+						</div>
 					</div>
-		</div>
 				</div>
 
 <!--    Hotel-->
 				<div class="search-hotel">
-				  <div class="search-hotel__description">
-					  <p class="search-hotel__text  search-hotel__text--emphasized"><strong>Заинтересовались?</strong></p>
-					  <p class="search-hotel__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<div class="search-hotel__description">
+						<p class="search-hotel__text  search-hotel__text--emphasized"><strong>Заинтересовались?</strong></p>
+						<p class="search-hotel__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 					</div>
-					<a href="#" class="btn  btn--search-hotel">Найти гостиницу</a>
+					<a href="http://worldhotels.ru/US/Sedona-AZ" class="btn  btn--wide">Найти гостиницу</a>
 				</div>
 				<!--    map-->
 				<div class="map">
-				  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d814116.3407346864!2d-111.85970286198673!3d34.87313407347223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1466809017156" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6716051.578633937!2d-112.40058884294187!3d34.722275568856595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1467132801379" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
-		  </main>
+			</main>
 <!--    footer-->
-		  <footer class="page-footer">
+			<footer class="page-footer">
 				<div class="page-footer__hashtag">#visitSedona</div>
 				<div class="social-block">
 					<ul class="social-block__list">
