@@ -96,6 +96,7 @@
 
   &::placeholder {
     color: black;
+    opacity: 1;
   }
 
   &--wide {
@@ -198,6 +199,7 @@
 
   &::placeholder {
     color: black;
+    opacity: 1;
   }
 }
 
@@ -552,7 +554,7 @@
 
   .form__icon {
     top: 0;
-    left: 344px;
+    left: 345px;
 
     &--email {
       left: 422px;

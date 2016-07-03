@@ -1,20 +1,20 @@
 .map {
   height: 350px;
   position: relative;
-  background: url(/img/icon-map-marker.svg) no-repeat 146px 161px,
-    url(../../img/bg-map-mobile@1x.jpg) no-repeat;
+  background:#cadfaa url(/img/icon-map-marker.svg) no-repeat 146px 161px,
+    #cadfaa url(../../img/bg-map-mobile@1x.jpg) no-repeat;
 }
 
 @media (min-width: 768px) {
   .map {
-    background: url(/img/icon-map-marker.svg) no-repeat 370px 164px,
-      url(../../img/bg-map-tablet@1x.jpg) no-repeat;
+    background:#f3f1ec url(/img/icon-map-marker.svg) no-repeat 370px 164px,
+      #f3f1ec url(../../img/bg-map-tablet@1x.jpg) no-repeat;
   }
 }
 
 @media (min-width: 1200px) {
   .map {
-    background: url(/img/icon-map-marker.svg) no-repeat 588px 164px,
-      url(../../img/bg-map-desktop@1x.jpg) no-repeat;
+    background:#f3f1ed url(/img/icon-map-marker.svg) no-repeat 588px 164px,
+      #f3f1ed url(../../img/bg-map-desktop@1x.jpg) no-repeat;
   }
 }
