@@ -57,6 +57,7 @@
 
 .video-gallery__wrapper {
 	display: inline-block;
+  vertical-align: middle;
   height: 67px;
   padding-top: 22px;
   box-sizing: border-box;
@@ -88,17 +89,17 @@
 
   &--replay {
     width: 16px;
-    background-image: url(../../img/icon-video-replay.svg);
+    background-image: url(../img/icon-video-replay.svg);
   }
 
   &--subtitles {
     width: 32px;
-    background-image: url(../../img/icon-video-subtitles.svg);
+    background-image: url(../img/icon-video-subtitles.svg);
   }
 
   &--fullscreen {
     width: 20px;
-    background-image: url(../../img/icon-video-fullscreen.svg);
+    background-image: url(../img/icon-video-fullscreen.svg);
   }
 }
 
@@ -176,15 +177,15 @@
 
   .video-gallery__item {
     &--replay {
-      background-image: url(../../img/icon-video-replay-white.svg);
+      background-image: url(../img/icon-video-replay-white.svg);
     }
 
     &--subtitles {
-      background-image: url(../../img/icon-video-subtitles-white.svg);
+      background-image: url(../img/icon-video-subtitles-white.svg);
     }
 
     &--fullscreen {
-      background-image: url(../../img/icon-video-fullscreen-white.svg);
+      background-image: url(../img/icon-video-fullscreen-white.svg);
     }
   }
 }

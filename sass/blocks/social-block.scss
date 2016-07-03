@@ -12,6 +12,7 @@
 
 .social-block__item {
   display: inline-block;
+  vertical-align: middle;
   height: 48px;
   width: 46px;
   margin-right: 6px;
@@ -26,19 +27,20 @@
   }
 
   &--tw {
-    background-image: url(../../img/icon-twitter.svg);
+    background-image: url(../img/icon-twitter.svg);
   }
 
   &--fb {
-    background-image: url(../../img/icon-facebook.svg);
+    background-image: url(../img/icon-facebook.svg);
   }
 
   &--youtube {
-    background-image: url(../../img/icon-youtube.svg);
+    background-image: url(../img/icon-youtube.svg);
   }
 
   & a {
     display: inline-block;
+    vertical-align: middle;
     height: 48px;
     width: 46px;
     font-size: 0;

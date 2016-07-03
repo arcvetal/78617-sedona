@@ -1,5 +1,6 @@
 .like-counter {
 	display: inline-block;
+  vertical-align: bottom;
 }
 
 .like-counter__hand {
@@ -7,14 +8,13 @@
   border: none;
   height: 21px;
   width: 23px;
-  background: url(../../img/icon-like.svg) no-repeat;
+  background: url(../img/icon-like.svg) no-repeat;
 }
 
 .like-counter__number {
   display: inline-block;
   padding-left: 10px;
   font-weight: 700;
-  vertical-align: bottom;
 }
 
 @media (min-width: 768px) {
@@ -38,7 +38,7 @@
 
 @media (min-width: 1200px) {
   .like-counter__hand {
-    background: url(../../img/icon-like-white.svg) no-repeat;
+    background: url(../img/icon-like-white.svg) no-repeat;
     top: -3px;
   }
 
