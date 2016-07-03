@@ -24,7 +24,7 @@ module.exports = function(grunt) {
               "last 2 Edge versions"
             ]}),
             require("css-mqpacker")({
-              sort:false
+              sort:true
             })
           ]
         },
