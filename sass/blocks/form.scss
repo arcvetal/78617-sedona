@@ -94,6 +94,10 @@
   font-weight: 700;
   background-color: $input-color;
 
+  &::placeholder {
+    color: black;
+  }
+
   &--wide {
     min-width: 280px;
   }
@@ -147,6 +151,7 @@
   position: absolute;
   height: 58px;
   width: 58px;
+  top: 34px;
   left: 222px;
   background-color: #e6e6e6;
   background-position: 50% 50%;
@@ -190,15 +195,10 @@
   font-weight: 700;
   line-height: 26px;
   background-color: $input-color;
-}
 
-.btn--thin {
-	margin: 0 auto;
-	margin-bottom: 39px;
-	padding-top: 2px;
-	color: white;
-	text-transform: uppercase;
-	font-weight: 700;
+  &::placeholder {
+    color: black;
+  }
 }
 
 .form__required-field {
@@ -421,13 +421,6 @@
     align-items: baseline;
   }
 
-  .btn--thin {
-    width: 324px;
-    padding-left: 0;
-    margin: 0;
-    margin-right: auto;
-  }
-
   .form__required-field {
     display: block;
   }
@@ -558,6 +551,7 @@
   }
 
   .form__icon {
+    top: 0;
     left: 344px;
 
     &--email {
@@ -584,10 +578,4 @@
     justify-content: space-between;
     align-items: baseline;
   }
-
-  .btn--thin {
-    width: 481px;
-    padding-bottom: 3px;
-  }
 }
-

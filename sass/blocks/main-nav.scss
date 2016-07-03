@@ -1,23 +1,14 @@
-.main-nav {
-	position: relative;
-}
 .main-nav__list {
   display: none;
-  position: absolute;
   width: 100%;
-  bottom: 54px;
   padding: 0;
   margin: 0;
   list-style: none;
   background-color: $menu-bg-color;
-	
+
 	&--active {
 		display: block;
 	}
-}
-
-.visible-hidden {
-	display: none;
 }
 
 .main-nav__item {
@@ -39,6 +30,10 @@
   }
 }
 
+.main-nav__wrapper {
+  position: relative;
+  height: 56px;
+}
 
 .main-nav__toggle {
   position: absolute;
@@ -111,17 +106,22 @@
     display: block;
     position: static;
     background-color: transparent;
-
-    @include clearfix
+    @include clearfix;
   }
 
-.visible-hidden {
-	display: block;
-}
+  .main-nav__wrapper-item {
+    width: 40%;
+    float: left;
+
+    &--right {
+      float: right;
+    }
+  }
 
   .main-nav__item {
-    float: left;
-    width: 20%;
+    width: 50%;
+    display: inline-block;
+    margin-right: -4px;
 
     & a {
       box-shadow: none;
@@ -139,6 +139,9 @@
     }
   }
 
+  .main-nav__wrapper {
+    display: none;
+  }
   .main-nav__toggle {
     display: none;
   }

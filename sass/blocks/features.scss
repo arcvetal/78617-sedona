@@ -132,7 +132,7 @@
   padding-bottom: 16px;
 
   &::before {
-     content: "– ";
+    content: "– ";
   }
 
   &::after {
@@ -141,9 +141,15 @@
   }
 }
 
+.features__image-wrapper {
+  overflow: hidden;
+}
+
 .features__image {
   display: block;
   height: 260px;
+  width: auto;
+  margin-left: -102px;
 }
 
 .features__wrapper--tags {
@@ -291,7 +297,11 @@
     height: inherit;
     width: 66.67%;
     box-sizing: border-box;
-    overflow: hidden;
+  }
+
+  .features__image {
+    height: 257px;
+    margin-left: 0;
   }
 
   .features__item-number {
@@ -362,8 +372,13 @@
       padding-right: 100px;
     }
   }
+
+  .features__image {
+    height: auto;
+    margin-top: -73px;
+
+    &--bridge {
+      margin-top: -77px;
+    }
+  }
 }
-
-
-
-

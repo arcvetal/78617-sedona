@@ -1,12 +1,6 @@
 .page-header{
   position: relative;
-  height: 56px;
-  width: 100%;
   background-color: white;
-
-  &--active {
-    margin-top: 222px;
-  }
 
   @media (min-width: 768px) {
     margin-top: 0px;

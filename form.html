@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!-- class="nojs" - этот класс добавлен для реализации работы меню при отключенном JS. При отключенном JS меню должно быть раскрыто (добавлен класс "main-nav__list--active") и убрана кнопка "гамбургер".
+При включенном JS этот класс будет убран-->
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,18 +11,23 @@
 	<body class="body">
 		<div class="wrapper">
 <!--   	header-->
-			<header class="page-header">
+			<header class="page-header  page-header--active">
 				<nav class="main-nav">
-					<ul class="main-nav__list">
+					<ul class="main-nav__list  main-nav__list--active">
 <!--По умолчанию при включенном JS, меню скрыто. Для раскрытия меню к классу "main-nav__list" нужно добавить класс "main-nav__list--active"-->
-						<li class="main-nav__item"><a  href="index.html">Главная</a></li>
-						<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-						<li class="main-nav__item  visible-hidden"><a href="#"></a></li>
-						<li class="main-nav__item"><a>Форма отзыва</a></li>
-						<li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+						<div class="main-nav__wrapper-item">
+						  <li class="main-nav__item"><a href="index.html">Главная</a></li>
+						  <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+						</div>
+						<div class="main-nav__wrapper-item  main-nav__wrapper-item--right">
+						  <li class="main-nav__item"><a>Форма отзыва</a></li>
+						  <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+						</div>
 					</ul>
-					<button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
-<!--		При нажатии на иконку "гамбургер" к классу "main-nav__list" (список меню) добавляется класс "main-nav__list--active", который расскрывает список меню, и к классу "page-header" добавляется класс "page-header--active", который дает отступ сверху (чтобы в этот отступ поместить список меню). Также к классу "main-nav__toggle" добавляется класс "main-nav__toggle--active" который преобразует его в "крестик".-->
+					<div class="main-nav__wrapper">
+						<button class="main-nav__toggle  main-nav__toggle--active" type="button"><span>Открыть меню</span></button>
+					</div>
+<!--		При нажатии на иконку "гамбургер" к классу "main-nav__list" (список меню) добавляется класс "main-nav__list--active", который расскрывает список меню. Также к классу "main-nav__toggle" добавляется класс "main-nav__toggle--active" который преобразует его в "крестик".-->
 				</nav>
 				<div class="logo">
 					<a href="index.html">
@@ -31,9 +38,9 @@
 						</picture>
 					</a>
 				</div>
-      </header>
+			</header>
 <!--    main-->
-		  <main class="page-content">
+			<main class="page-content">
 				<div class="wallpaper  wallpaper--middle"></div>
 				<div class="promo">
 					<h1 class="promo__title  promo__title--biggest">Оставьте свой отзыв</h1>
@@ -46,18 +53,18 @@
 <!-- name-->
 						<div class="form__wrapper-field  form__wrapper-field--thin">
 							<div class="form__field">
-						  	<label class="form__label" for="name">ИМЯ:</label>
-						  	<input class="form__item  form__item--text" type="text" name="name" id="name" value="Петр" size="20">
+								<label class="form__label" for="name">ИМЯ:</label>
+								<input class="form__item  form__item--text" type="text" name="name" id="name" placeholder="Петр" size="20">
 							</div>
 <!--  second-name-->
 							<div class="form__field">
-						  	<label class="form__label" for="second-name">ФАМИЛИЯ:</label>
-						  	<input class="form__item  form__item--text" type="text" name="second-name" id="second-name" value="Иванов" size="16">
+								<label class="form__label" for="second-name">ФАМИЛИЯ:</label>
+								<input class="form__item  form__item--text" type="text" name="second-name" id="second-name" placeholder="Иванов" size="16">
 							</div>
 <!--  father-name-->
 							<div class="form__field">
-						  	<label class="form__label" for="father-name">ОТЧЕСТВО:</label>
-						  	<input class="form__item  form__item--text" type="text" name="father-name" id="father-name" value="Александрович" size="16">
+								<label class="form__label" for="father-name">ОТЧЕСТВО:</label>
+								<input class="form__item  form__item--text" type="text" name="father-name" id="father-name" placeholder="Александрович" size="16">
 							</div>
 						</div>
 					</div>
@@ -67,14 +74,14 @@
 <!--  Phone-->
 						<div class="form__wrapper-field  form__wrapper-field--contacts">
 							<div class="form__field  form__field--wide  form__field--tall">
-						  	<label class="form__label  form__label--thin" for="phone"><span class="form__text-hidden">КОНТАКТНЫЙ</span>ТЕЛЕФОН:</label>
-						  	<input class="form__item  form__item--wide" type="tel" name="phone" id="phone" value="Введите телефон"><span class="form__icon  form__icon--phone"></span>
-						  	<p class="form__warning">Ошибка, перепроверьте номер</p>
+								<label class="form__label  form__label--thin" for="phone"><span class="form__text-hidden">КОНТАКТНЫЙ</span>ТЕЛЕФОН:</label>
+								<input class="form__item  form__item--wide" type="tel" name="phone" id="phone" placeholder="Введите телефон"><span class="form__icon  form__icon--phone"></span>
+								<p class="form__warning">Ошибка, перепроверьте номер</p>
 							</div>
 <!--  E-mail-->
 							<div class="form__field  form__field--wide">
-						  	<label class="form__label  form__label--thin" for="email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
-						  	<input class="form__item  form__item--text  form__item--wide" type="email" name="email" id="email" value="Введите e-mail"><span class="form__icon  form__icon--email"></span>
+								<label class="form__label  form__label--thin" for="email">ЭЛЕКТРОННАЯ ПОЧТА:</label>
+								<input class="form__item  form__item--text  form__item--wide" type="email" name="email" id="email" placeholder="Введите e-mail"><span class="form__icon  form__icon--email"></span>
 							</div>
 						</div>
 					</div>
@@ -84,18 +91,18 @@
 <!--  radio-good-->
 						<div class="form__wrapper-field">
 							<div class="form__field  form__field--radio">
-						  	<input class="form__item  form__item--radio" type="radio" id="impression-good" name="impression" value="good" checked>
-						  	<label class="form__label  form__label--bold" for="impression-good">Скорее положительное</label>
+								<input class="form__item  form__item--radio" type="radio" id="impression-good" name="impression" value="good" checked>
+								<label class="form__label  form__label--bold" for="impression-good">Скорее положительное</label>
 							</div>
 <!--  radio-bad-->
 							<div class="form__field  form__field--radio">
-						  	<input class="form__item  form__item--radio" type="radio" id="impression-bad" name="impression" value="bad">
-						  	<label class="form__label  form__label--bold" for="impression-bad">Скорее отрицательное</label>
+								<input class="form__item  form__item--radio" type="radio" id="impression-bad" name="impression" value="bad">
+								<label class="form__label  form__label--bold" for="impression-bad">Скорее отрицательное</label>
 							</div>
 <!--  radio-dontknow-->
 							<div class="form__field  form__field--radio">
-						  	<input class="form__item  form__item--radio" type="radio" id="impression-dontknow" name="impression" value="dontknow">
-						  	<label class="form__label  form__label--bold" for="impression-dontknow">Затрудняюсь ответить</label>
+								<input class="form__item  form__item--radio" type="radio" id="impression-dontknow" name="impression" value="dontknow">
+								<label class="form__label  form__label--bold" for="impression-dontknow">Затрудняюсь ответить</label>
 							</div>
 						</div>
 					</div>
@@ -105,23 +112,23 @@
 <!--  checkbox 1-->
 						<div class="form__wrapper-field  form__wrapper-field--places-block">
 							<div class="form__field  form__field--check  form__field--devil-bridge">
-						  	<input class="form__item  form__item--check" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-						  	<label class="form__label  form__label--bold  form__label--check" for="devil-bridge">Мост Дьявола</label>
+								<input class="form__item  form__item--check" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+								<label class="form__label  form__label--bold  form__label--check" for="devil-bridge">Мост Дьявола</label>
 							</div>
 <!--  checkbox 2-->
 							<div class="form__field  form__field--check">
-						  	<input class="form__item  form__item--check" type="checkbox" name="slide-park" id="slide-park" checked>
-						  	<label class="form__label  form__label--bold  form__label--check" for="slide-park">Слайд-парк</label>
+								<input class="form__item  form__item--check" type="checkbox" name="slide-park" id="slide-park" checked>
+								<label class="form__label  form__label--bold  form__label--check" for="slide-park">Слайд-парк</label>
 							</div>
 <!--  checkbox 3-->
 							<div class="form__field  form__field--check  form__field--mountain">
-						  	<input class="form__item  form__item--check" type="checkbox" name="rock-bell" id="rock-bell">
-						  	<label class="form__label  form__label--bold  form__label--check" for="rock-bell">Гора-Колокол</label>
+								<input class="form__item  form__item--check" type="checkbox" name="rock-bell" id="rock-bell">
+								<label class="form__label  form__label--bold  form__label--check" for="rock-bell">Гора-Колокол</label>
 							</div>
 <!--  checkbox 4-->
 							<div class="form__field  form__field--check">
-						  	<input class="form__item  form__item--check" type="checkbox" name="red-rocks" id="red-rocks" checked>
-						  	<label class="form__label  form__label--bold  form__label--check" for="red-rocks">Красные скалы</label>
+								<input class="form__item  form__item--check" type="checkbox" name="red-rocks" id="red-rocks" checked>
+								<label class="form__label  form__label--bold  form__label--check" for="red-rocks">Красные скалы</label>
 							</div>
 						</div>
 					</div>
@@ -129,8 +136,7 @@
 					<div class="form__fieldset  form__fieldset--comment">
 						<h3 class="form__title  form__title--comment">Опишите свои эмоции:</h3>
 						<div class="form__wrapper-field  form__wrapper-field--comment">
-						  <textarea class="form__textarea" name="text-description" id="text-description" cols="30" rows="10">Опишите подробно все свои восторги
-						  </textarea>
+							<textarea class="form__textarea" name="text-description" id="text-description" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
 						</div>
 					</div>
 					<div class="form__send">
@@ -139,10 +145,10 @@
 					</div>
 				</form>
 <!--				Модальные окна имеют общий класс (class="modal") и по умолчанию скрыты. Чтобы отобразить нужное окно, необходимо добавить класс "modal--visible"-->
-				<div class="modal modal--fail">
+				<div class="modal  modal--fail">
 					<strong class="modal__title">Что-то пошло не так!</strong>
 					<p class="modal__text">Проверьте поля, выделеные красным, скорее всего вы забыли их заполнить.</p>
-					<button class="btn btn--fail">Ок</button>
+					<button type="button" class="btn btn--fail">Ок</button>
 				</div>
 				<div class="modal  modal--succes">
 					<div class="modal__promo  modal__promo--succes">
@@ -150,12 +156,12 @@
 						<p class="modal__text  modal__text--succes">Спасибо за ваше участие, ваш отзыв уже поступилк нам. В ближайшее время мы опубликуем его на сайте.</p>
 					</div>
 					<div class="modal__btn-wrapper">
-						<button class="btn  btn--succes">Закрыть окно</button>
+						<button type="button" class="btn  btn--succes">Закрыть окно</button>
 					</div>
 				</div>
-		  </main>
+			</main>
 <!--    footer-->
-		  <footer class="page-footer">
+			<footer class="page-footer">
 				<div class="page-footer__hashtag">#visitSedona</div>
 				<div class="social-block">
 					<ul class="social-block__list">
@@ -169,7 +175,7 @@
 						<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
 					</a>
 				</div>
-		  </footer>
+			</footer>
 		</div>
 		<script src="js/picturefill.min.js"></script>
 	</body>

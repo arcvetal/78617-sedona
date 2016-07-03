@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" class="nojs">
-<!-- class="nojs" - этот класс добавлен для реализации работы меню при отключенном JS. При отключенном JS меню должно быть раскрыто (добавлены классы "page-header--active" и "main-nav__list--active") и убрана кнопка "гамбургер".
+<!-- class="nojs" - этот класс добавлен для реализации работы меню при отключенном JS. При отключенном JS меню должно быть раскрыто (добавлен класс "main-nav__list--active") и убрана кнопка "гамбургер".
 При включенном JS этот класс будет убран-->
 	<head>
 		<meta charset="utf-8">
@@ -13,16 +13,21 @@
 <!--   	header-->
 			<header class="page-header">
 				<nav class="main-nav">
-					<ul class="main-nav__list">
+					<ul class="main-nav__list  main-nav__list--active">
 <!--По умолчанию при включенном JS, меню скрыто. Для раскрытия меню к классу "main-nav__list" нужно добавить класс "main-nav__list--active"-->
-						<li class="main-nav__item"><a>Главная</a></li>
-						<li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-						<li class="main-nav__item  visible-hidden"><a href="#"></a></li>
-						<li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
-						<li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+            <div class="main-nav__wrapper-item">
+						  <li class="main-nav__item"><a>Главная</a></li>
+						  <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
+						</div>
+						<div class="main-nav__wrapper-item  main-nav__wrapper-item--right">
+						  <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+						  <li class="main-nav__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+						</div>
 					</ul>
-					<button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
-<!--		При нажатии на иконку "гамбургер" к классу "main-nav__list" (список меню) добавляется класс "main-nav__list--active", который расскрывает список меню, и к классу "page-header" добавляется класс "page-header--active", который дает отступ сверху (чтобы в этот отступ поместить список меню). Также к классу "main-nav__toggle" добавляется класс "main-nav__toggle--active" который преобразует его в "крестик".-->
+					<div class="main-nav__wrapper">
+						<button class="main-nav__toggle  main-nav__toggle--active" type="button"><span>Открыть меню</span></button>
+					</div>
+<!--		При нажатии на иконку "гамбургер" к классу "main-nav__list" (список меню) добавляется класс "main-nav__list--active", который расскрывает список меню. Также к классу "main-nav__toggle" добавляется класс "main-nav__toggle--active" который преобразует его в "крестик".-->
 				</nav>
 				<div class="logo">
 					<a href="index.html">
@@ -56,18 +61,18 @@
 						</div>
 					</div>
 					<div class="features__wrapper  features__wrapper--tags">
-				  	<div class="features__item  features__item--tags">
-				  		<h3 class="features__title  features__title--tags  features__title--home"> Жилье</h3>
-				  		<p class="features__text  features__text--tags  features__text--home">Рекомендуем пожить в настоящем мотеле, 	все как в кино!</p>
-				  	</div>
-				  	<div class="features__item  features__item--tags  features__item--right">
-				  		<h3 class="features__title  features__title--tags  features__title--gift">Сувениры</h3>
-				  		<p class="features__text  features__text--tags  features__text--gift">Не только китайского, но и местного 	производства!</p>
-				  	</div>
-				  	<div class="features__item  features__item--tags">
-				  		<h3 class="features__title  features__title--tags  features__title--food">Еда</h3>
-				  		<p class="features__text  features__text--tags  features__text--food">Всегда заказывайте фирменный бургер, вы 	не разочаруетесь!</p>
-				  	</div>
+						<div class="features__item  features__item--tags">
+							<h3 class="features__title  features__title--tags  features__title--home"> Жилье</h3>
+							<p class="features__text  features__text--tags  features__text--home">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						</div>
+						<div class="features__item  features__item--tags  features__item--right">
+							<h3 class="features__title  features__title--tags  features__title--gift">Сувениры</h3>
+							<p class="features__text  features__text--tags  features__text--gift">Не только китайского, но и местного производства!</p>
+						</div>
+						<div class="features__item  features__item--tags">
+							<h3 class="features__title  features__title--tags  features__title--food">Еда</h3>
+							<p class="features__text  features__text--tags  features__text--food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</div>
 					</div>
 
 <!--    		second-item-->
@@ -78,7 +83,7 @@
 						</div>
 						<div class="features__image-wrapper">
 							<picture>
-								<img class="features__image" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Каньон">
+								<img class="features__image  features__image--bridge" src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Каньон">
 							</picture>
 						</div>
 					</div>
@@ -129,7 +134,7 @@
 						<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
 					</a>
 				</div>
-		  </footer>
+			</footer>
 		</div>
 		<script src="js/picturefill.min.js"></script>
 	</body>

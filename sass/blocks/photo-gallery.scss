@@ -20,8 +20,8 @@
 }
 
 .photo-gallery__note {
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 .photo-gallery__author {
@@ -29,28 +29,6 @@
   margin-bottom: 10px;
   text-transform: none;
 }
-
-.like-counter {
-	position: relative;
-}
-
-.like-counter__hand {
-  display: block;
-  position: relative;
-  height: 21px;
-  width: 23px;
-  background: url(../../img/icon-like.svg) no-repeat;
-}
-
-.like-counter__number{
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 36px;
-  font-weight: 700;
-}
-
-
 
 @media (min-width: 768px) {
   .photo-gallery {
@@ -100,17 +78,6 @@
   .photo-gallery__descr {
     padding-top: 8px;
   }
-
-  .like-counter {
-    align-self: center;
-    margin-right: 60px;
-    margin-left: auto;
-  }
-
-  .like-counter__number{
-    left: 30px;
-  }
-
 }
 
 @media (min-width: 1200px) {
@@ -162,14 +129,5 @@
   .photo-gallery__author {
     padding-left: 2px;
     color: white;
-  }
-
-  .like-counter__hand {
-    background: url(../../img/icon-like-white.svg) no-repeat;
-    top: -3px;
-  }
-
-  .like-counter__number{
-    top: 0;
   }
 }
