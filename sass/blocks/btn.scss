@@ -19,12 +19,30 @@
 	  color: white;
 	  text-transform: uppercase;
 	  font-weight: 700;
+
+     &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+      background-color: #5496bd;
+    }
   }
 
   &--wide {
     margin: 0 auto;
     margin-bottom: 49px;
     text-decoration: none;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+      background-color: #5496bd;
+    }
   }
 
   &--fail {

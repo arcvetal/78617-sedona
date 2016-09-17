@@ -1,9 +1,13 @@
 .logo {
   position: absolute;
-	top: 223px;
+	top: 0;
   left: 109px;
   height: 83px;
   width: 102px;
+
+  &--active {
+	top: 223px;
+  }
 
   & a {
     height: 83px;

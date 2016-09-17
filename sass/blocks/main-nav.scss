@@ -27,6 +27,15 @@
     text-align: center;
     text-decoration: none;
     background-color: $menu-bg-color;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      color: rgba(white, 0.3);
+      background-color: #5496bd;
+    }
   }
 }
 
@@ -43,8 +52,10 @@
   top: 13px;
   right: 20px;
   border: none;
+  border-style: none;
   font-size: 0;
   background-color: white;
+
 
   & span {
     display: block;
@@ -79,25 +90,29 @@
   }
 }
 
-.main-nav__toggle--active span {
-  position: absolute;
+.main-nav__toggle--active {
   top: -208px;
-  left: 0px;
-  border: none;
-  background: none;
+  background-color: transparent;
 
-  &::before {
-    width: 28px;
-    bottom: 0;
-    transform: rotate(45deg) translateX(0.5px);
-    background-color: white;
-  }
+  & span {
+    position: absolute;
 
-  &::after {
-    width: 28px;
-    top: 0;
-    transform: rotate(-45deg) translateX(0.5px);
-    background-color: white;
+    border: none;
+    background: none;
+
+    &::before {
+      width: 28px;
+      bottom: 0;
+      transform: rotate(45deg) translateX(0.5px);
+      background-color: white;
+    }
+
+    &::after {
+      width: 28px;
+      top: 0;
+      transform: rotate(-45deg) translateX(0.5px);
+      background-color: white;
+    }
   }
 }
 
@@ -133,10 +148,33 @@
       &:nth-child(2+n) {
         float: right;
       }
+
+      &:hover {
+        color: $menu-bg-color;
+        background-color: transparent;
+      }
+
+      &:active {
+        color: rgba(#000000, 0.3);
+      }
     }
 
     &--visible-hidden {
       display: block;
+    }
+  }
+
+  .main-nav__item--current {
+    & a {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        color: rgba(#604e43, 0.3);
+      }
     }
   }
 

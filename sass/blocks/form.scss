@@ -100,6 +100,17 @@
     opacity: 1;
   }
 
+  &:hover {
+    background-color: $photo-gal-border;
+  }
+
+  &:focus {
+    outline: none;
+    padding-left: 19px;
+    border: 4px solid #eaeaea;
+    background-color: transparent;
+  }
+
   &--wide {
     min-width: 280px;
   }
@@ -107,46 +118,86 @@
   &--radio {
     display: none;
 
-    &+.form__label--bold::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: absolute;
-      top: 7px;
-      left: 1px;
-      height: 22px;
-      width: 22px;
-      border: 17px solid;
-      border-color: $input-color;
-      border-radius: 50%;
-      background-color: $input-color;
+    &+.form__label--bold {
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        top: 7px;
+        left: 1px;
+        height: 22px;
+        width: 22px;
+        border: 17px solid;
+        border-color: $input-color;
+        border-radius: 50%;
+        background-color: $input-color;
+      }
+
+      &:hover::before {
+        border-color: $photo-gal-border;
+        background-color: $photo-gal-border;
+      }
+
+      &:active::before {
+        border-color: #d5d5d5;
+        background-color: #d5d5d5;
+      }
     }
 
-    &:checked+.form__label--bold::before {
-      background-color: #333333;
+    &:checked+.form__label--bold {
+      &::before {
+        background-color: #333333;
+      }
+
+      &:active::before {
+        background-color: rgba(#333333, 0.3);
+      }
     }
   }
 
   &--check {
     display: none;
 
-    &+.form__label--bold::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      position: absolute;
-      top: -2px;
-      left: 0px;
-      height: 24px;
-      width: 24px;
-      border: 17px solid;
-      border-color: $input-color;
-      border-radius: 5px;
-      background-color: $input-color;
+    &+.form__label--bold {
+      &::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        top: -2px;
+        left: 0px;
+        height: 24px;
+        width: 24px;
+        border: 17px solid;
+        border-color: $input-color;
+        border-radius: 5px;
+        background-color: $input-color;
+      }
+
+      &:hover::before {
+        border-color: $photo-gal-border;
+        background-color: $photo-gal-border;
+      }
+
+      &:active::before {
+        border-color: #d5d5d5;
+        background-color: #d5d5d5;
+      }
     }
 
-    &:checked+.form__label--bold::before {
-      background: $input-color url(../img/icon-tick.svg) no-repeat 0 5px;
+    &:checked+.form__label--bold {
+      &::before {
+        background: $input-color url(../img/icon-tick.svg) no-repeat 0 5px;
+      }
+
+      &:hover::before {
+        background: $photo-gal-border url(../img/icon-tick.svg) no-repeat 0 5px;
+      }
+
+      &:active::before {
+        background: #d5d5d5 url(../img/icon-tick.svg) no-repeat 0 5px;
+      }
     }
   }
 }
@@ -204,6 +255,18 @@
     color: black;
     opacity: 1;
   }
+//
+//  &:hover {
+//    background-color: $photo-gal-border;
+//  }
+//
+//  &:focus {
+//    outline: none;
+//    padding-top: 11px;
+//    padding-left: 18px;
+//    border: 4px solid #eaeaea;
+//    background-color: transparent;
+//  }
 }
 
 .form__required-field {

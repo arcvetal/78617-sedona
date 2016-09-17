@@ -22,6 +22,10 @@
   background-position: 50%;
   background-size: auto;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
   &:last-child {
     margin-right: 0px;
   }
@@ -44,6 +48,10 @@
     height: 48px;
     width: 46px;
     font-size: 0;
+
+    &:active {
+      background-color: rgba(#5496bd, 0.7);
+    }
   }
 }
 
